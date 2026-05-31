@@ -44,16 +44,11 @@
     "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
     "portraits": [
       {
-        "fromYear": 1735,
-        "toYear": 1784,
-        "url": "",
-        "credit": "placeholder — no known portrait from this period"
-      },
-      {
-        "fromYear": 1785,
-        "toYear": 1826,
-        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Adams&font=playfair-display",
-        "credit": "J. Adams — placeholder portrait"
+        "fromYear": 1797,
+        "toYear": 1801,
+        "url": "02-thumbnail-1797.jpg",
+        "popoverUrl": "02-popover-1797.jpg",
+        "credit": "TBD"
       }
     ]
   },
