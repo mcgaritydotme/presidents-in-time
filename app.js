@@ -82,14 +82,17 @@
   //     This keeps "one term = one row" (1801–1805 rings only the 1801 row) while
   //     letting a successor's in-office portrait fill a partial first row (e.g. Fillmore
   //     in the 1849 row he enters in 1850).
-  //   • Otherwise fall back to the latest period that has already begun — so a
-  //     died-in-office president's final row past their last range still shows their
-  //     portrait (e.g. Lincoln's 1849–1865 portrait in the 1865 row he rings), and
-  //     never collapses to a blank/name-card cell.
-  // If nothing has begun yet (a born-but-pre-portrait row, e.g. Washington before his
-  // 1789 term), return null so the cell falls back to the cream name placeholder —
-  // we must NOT surface a later period early.
-  function portraitFor(p, y) {
+  //   • Otherwise, ONLY when allowForward is true (the president is in office this
+  //     row), fall back to the latest period that has already begun. This covers a
+  //     died-in-office president's final partial row, which starts at their term-end
+  //     year past the last range — e.g. Lincoln's 1861–1865 portrait in the 1865 row
+  //     he still rings — without it collapsing to a blank cell.
+  // We deliberately do NOT extend a portrait into out-of-office years: a living former
+  // president (J. Adams after 1801, Jefferson after 1809) with no portrait defined for
+  // those years gets the cream name placeholder, not their stale in-office portrait.
+  // And a born-but-pre-portrait row (Washington before 1789) returns null too — we
+  // never surface a later period early.
+  function portraitFor(p, y, allowForward) {
     const end = y + STEP;
     let overlap = null, latestStarted = null;
     for (const pt of p.portraits) {
@@ -100,7 +103,7 @@
         latestStarted = pt;
       }
     }
-    return overlap || latestStarted;
+    return overlap || (allowForward ? latestStarted : null);
   }
 
   /* ---------- URL state (filter) ---------- */
@@ -205,7 +208,8 @@
     // A cell renders a full-colour image ONLY when it points to a genuine photo.
     // Any placeholder (empty url, or a placehold.co stand-in) gets the unified
     // cream name-placeholder treatment, so all of a president's pre-photo cells match.
-    const pt = portraitFor(p, y);
+    const isInTerm = inTerm(p, y);
+    const pt = portraitFor(p, y, isInTerm);
     const realImg = (pt && pt.url && !/placehold\.co/i.test(pt.url)) ? resolveImg(pt.url) : null;
     const src = realImg || namePlaceholder(p.displayName);
 
@@ -216,7 +220,7 @@
     img.dataset.src = src;
     cell.appendChild(img);
 
-    if (inTerm(p, y)) cell.classList.add('in-term');
+    if (isInTerm) cell.classList.add('in-term');
 
     // hover popover — shows the portrait paired with THIS cell's period
     cell.addEventListener('mouseenter', () => showPopover(p, cell, y));
@@ -261,7 +265,7 @@
     // Per-period popover: hovering a cell shows the portrait paired with THAT
     // period's portraits[] entry (popoverUrl). Periods without their own
     // popoverUrl fall back to the president's defaultPortraitUrl.
-    const pt = portraitFor(p, y);
+    const pt = portraitFor(p, y, inTerm(p, y));
     const periodPopover = (pt && pt.popoverUrl && !/placehold\.co/i.test(pt.popoverUrl))
       ? pt.popoverUrl : null;
     const portraitSrc = resolveImg(periodPopover || p.defaultPortraitUrl);
