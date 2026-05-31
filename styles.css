@@ -1,0 +1,180 @@
+/* ============================================================
+   Presidents in Time — shared stylesheet
+   Themeable tokens live at :root so color changes are one-liners.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+  /* --- core palette --- */
+  --bg:            #FAFAF7;   /* warm cream page */
+  --panel:         #FFFFFF;   /* popovers / dropdown surfaces */
+  --ink:           #23211C;   /* near-black warm text */
+  --ink-soft:      #5C564B;   /* secondary text */
+  --muted:         #8C8474;   /* metadata, term numbers */
+  --hairline:      #E7E2D6;   /* faint separators (toolbars only, never the grid) */
+
+  /* --- empty-cell tints (subtle warm difference) --- */
+  --cell-unborn:   #F1EDE3;   /* not yet born — lighter */
+  --cell-deceased: #E6E0D2;   /* already deceased — a touch darker/warmer */
+
+  /* --- in-term ring (single source of truth) --- */
+  --color-in-term: #B8972A;
+
+  /* --- type --- */
+  --serif: 'Spectral', Georgia, 'Palatino Linotype', Palatino, serif;
+  --sans:  -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* --- geometry --- */
+  --radius: 8px;
+  --gap:    12px;
+  --header-h: 64px;          /* page header height */
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; }
+
+/* ============================================================
+   Page header — fully self-contained & portable.
+   Drop this same markup into any page; no structural changes.
+   ============================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.site-header .logo {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-header .logo .dot { color: var(--color-in-term); }
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.site-nav a {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--muted);
+  padding: 4px 0;
+  position: relative;
+  transition: color 0.15s ease;
+}
+.site-nav a:hover { color: var(--ink); }
+.site-nav a.active { color: var(--ink); }
+.site-nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -2px;
+  height: 2px;
+  background: var(--color-in-term);
+  border-radius: 2px;
+}
+
+/* ============================================================
+   About page layout
+   ============================================================ */
+.prose {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 72px 28px 120px;
+}
+.prose .eyebrow {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+.prose h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0 0 28px;
+}
+.prose h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 24px;
+  margin: 56px 0 16px;
+}
+.prose p {
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.66;
+  color: var(--ink-soft);
+  margin: 0 0 20px;
+  text-wrap: pretty;
+}
+.prose ul {
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  padding-left: 20px;
+  margin: 0 0 20px;
+}
+.prose li { margin-bottom: 8px; }
+.prose a.inline { color: var(--ink); text-decoration: underline; text-decoration-color: var(--hairline); text-underline-offset: 3px; }
+.prose a.inline:hover { text-decoration-color: var(--color-in-term); }
+
+.credits {
+  border-top: 1px solid var(--hairline);
+  padding-top: 28px;
+  margin-top: 8px;
+}
+.credits dl {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 12px 24px;
+  font-family: var(--sans);
+  font-size: 14px;
+  margin: 0;
+}
+.credits dt { color: var(--muted); font-weight: 500; }
+.credits dd { margin: 0; color: var(--ink-soft); }
+
+.placeholder-block {
+  margin-top: 24px;
+  border: 1px dashed var(--hairline);
+  border-radius: var(--radius);
+  padding: 40px 28px;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted);
+  background:
+    repeating-linear-gradient(45deg, transparent 0 11px, rgba(140,132,116,0.05) 11px 12px);
+}

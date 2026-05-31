@@ -1,0 +1,1386 @@
+[
+  {
+    "id": 1,
+    "fullName": "George Washington",
+    "lastName": "Washington",
+    "displayName": "Washington",
+    "party": "Unaffiliated",
+    "birthYear": 1732,
+    "deathYear": 1799,
+    "termStart": 1789,
+    "termEnd": 1797,
+    "summary": "Commander of the Continental Army during the Revolutionary War and the first U.S. president, Washington established foundational precedents for the executive office and voluntarily relinquished power after two terms.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/George_Washington",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Washington&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1732,
+        "toYear": 1776,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1777,
+        "toYear": 1799,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Washington&font=playfair-display",
+        "credit": "Washington — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "fullName": "John Adams",
+    "lastName": "Adams",
+    "displayName": "J. Adams",
+    "party": "Federalist",
+    "birthYear": 1735,
+    "deathYear": 1826,
+    "termStart": 1797,
+    "termEnd": 1801,
+    "summary": "A leading advocate for independence and the nation's first vice president, Adams steered the young republic through the Quasi-War with France while defending a strong central government.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Adams",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Adams&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1735,
+        "toYear": 1784,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1785,
+        "toYear": 1826,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Adams&font=playfair-display",
+        "credit": "J. Adams — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "fullName": "Thomas Jefferson",
+    "lastName": "Jefferson",
+    "displayName": "Jefferson",
+    "party": "Democratic-Republican",
+    "birthYear": 1743,
+    "deathYear": 1826,
+    "termStart": 1801,
+    "termEnd": 1809,
+    "summary": "Principal author of the Declaration of Independence, Jefferson doubled the nation's size through the Louisiana Purchase and championed agrarian democracy and limited government.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_Jefferson",
+    "defaultPortraitUrl": "images/03-jefferson-default.jpg",
+    "defaultPortraitCredit": "Portrait by Rembrandt Peale",
+    "portraits": [
+      {
+        "fromYear": 1743,
+        "toYear": 1801,
+        "url": "",
+        "credit": "No known portrait from this period"
+      },
+      {
+        "fromYear": 1801,
+        "toYear": 1805,
+        "url": "images/03-jefferson-thumbnail-1801.jpeg",
+        "credit": "Rembrandt Peale"
+      },
+      {
+        "fromYear": 1805,
+        "toYear": 1809,
+        "url": "images/03-jefferson-thumbnail-1805.png",
+        "credit": "Rembrant Peale"
+      },
+      {
+        "fromYear": 1809,
+        "toYear": 1827,
+        "url": "",
+        "credit": "No known portrait from this period"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "fullName": "James Madison",
+    "lastName": "Madison",
+    "displayName": "Madison",
+    "party": "Democratic-Republican",
+    "birthYear": 1751,
+    "deathYear": 1836,
+    "termStart": 1809,
+    "termEnd": 1817,
+    "summary": "Known as the 'Father of the Constitution' for drafting much of its framework, Madison led the nation through the War of 1812 against Great Britain.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/James_Madison",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Madison&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1751,
+        "toYear": 1796,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1797,
+        "toYear": 1836,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Madison&font=playfair-display",
+        "credit": "Madison — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "fullName": "James Monroe",
+    "lastName": "Monroe",
+    "displayName": "Monroe",
+    "party": "Democratic-Republican",
+    "birthYear": 1758,
+    "deathYear": 1831,
+    "termStart": 1817,
+    "termEnd": 1825,
+    "summary": "Presiding over the 'Era of Good Feelings,' Monroe issued the Monroe Doctrine warning European powers against further colonization of the Americas.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/James_Monroe",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Monroe&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1758,
+        "toYear": 1804,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1805,
+        "toYear": 1831,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Monroe&font=playfair-display",
+        "credit": "Monroe — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "fullName": "John Quincy Adams",
+    "lastName": "Adams",
+    "displayName": "J.Q. Adams",
+    "party": "Democratic-Republican",
+    "birthYear": 1767,
+    "deathYear": 1848,
+    "termStart": 1825,
+    "termEnd": 1829,
+    "summary": "A brilliant diplomat and son of John Adams, he promoted national infrastructure and later became a fierce anti-slavery voice in the House of Representatives.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Quincy_Adams",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Adams&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1767,
+        "toYear": 1812,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1813,
+        "toYear": 1848,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Adams&font=playfair-display",
+        "credit": "J.Q. Adams — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "fullName": "Andrew Jackson",
+    "lastName": "Jackson",
+    "displayName": "Jackson",
+    "party": "Democrat",
+    "birthYear": 1767,
+    "deathYear": 1845,
+    "termStart": 1829,
+    "termEnd": 1837,
+    "summary": "A populist war hero who reshaped the presidency, Jackson dismantled the national bank and forcibly removed Native nations along the Trail of Tears.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Andrew_Jackson",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Jackson&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1767,
+        "toYear": 1816,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1817,
+        "toYear": 1845,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Jackson&font=playfair-display",
+        "credit": "Jackson — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "fullName": "Martin Van Buren",
+    "lastName": "Van Buren",
+    "displayName": "Van Buren",
+    "party": "Democrat",
+    "birthYear": 1782,
+    "deathYear": 1862,
+    "termStart": 1837,
+    "termEnd": 1841,
+    "summary": "A master political organizer who helped found the Democratic Party, Van Buren's single term was consumed by the financial Panic of 1837.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Martin_Van_Buren",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Van%20Buren&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1782,
+        "toYear": 1824,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1825,
+        "toYear": 1862,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Van%20Buren&font=playfair-display",
+        "credit": "Van Buren — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "fullName": "William Henry Harrison",
+    "lastName": "Harrison",
+    "displayName": "W.H. Harrison",
+    "party": "Whig",
+    "birthYear": 1773,
+    "deathYear": 1841,
+    "termStart": 1841,
+    "termEnd": 1841,
+    "diedInOffice": true,
+    "summary": "A military hero of Tippecanoe, Harrison died of illness just 31 days into office, the shortest presidency in American history.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/William_Henry_Harrison",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Harrison&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1773,
+        "toYear": 1828,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1829,
+        "toYear": 1841,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Harrison&font=playfair-display",
+        "credit": "W.H. Harrison — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "fullName": "John Tyler",
+    "lastName": "Tyler",
+    "displayName": "Tyler",
+    "party": "Whig",
+    "birthYear": 1790,
+    "deathYear": 1862,
+    "termStart": 1841,
+    "termEnd": 1845,
+    "summary": "The first vice president elevated by a president's death, Tyler set the precedent for full succession and oversaw the annexation of Texas.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Tyler",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Tyler&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1790,
+        "toYear": 1828,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1829,
+        "toYear": 1862,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Tyler&font=playfair-display",
+        "credit": "Tyler — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "fullName": "James K. Polk",
+    "lastName": "Polk",
+    "displayName": "Polk",
+    "party": "Democrat",
+    "birthYear": 1795,
+    "deathYear": 1849,
+    "termStart": 1845,
+    "termEnd": 1849,
+    "summary": "An expansionist who fulfilled the vision of Manifest Destiny, Polk added vast western territories through the Mexican-American War and the Oregon settlement.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/James_K._Polk",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Polk&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1795,
+        "toYear": 1832,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1833,
+        "toYear": 1849,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Polk&font=playfair-display",
+        "credit": "Polk — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "fullName": "Zachary Taylor",
+    "lastName": "Taylor",
+    "displayName": "Taylor",
+    "party": "Whig",
+    "birthYear": 1784,
+    "deathYear": 1850,
+    "termStart": 1849,
+    "termEnd": 1850,
+    "diedInOffice": true,
+    "summary": "A celebrated Mexican-American War general, Taylor served barely sixteen months before dying suddenly amid the brewing crisis over slavery in new territories.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Zachary_Taylor",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Taylor&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1784,
+        "toYear": 1836,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1837,
+        "toYear": 1850,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Taylor&font=playfair-display",
+        "credit": "Taylor — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "fullName": "Millard Fillmore",
+    "lastName": "Fillmore",
+    "displayName": "Fillmore",
+    "party": "Whig",
+    "birthYear": 1800,
+    "deathYear": 1874,
+    "termStart": 1850,
+    "termEnd": 1853,
+    "summary": "Succeeding Taylor, Fillmore signed the Compromise of 1850, including the Fugitive Slave Act, in a doomed effort to hold the Union together.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Millard_Fillmore",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Fillmore&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1800,
+        "toYear": 1837,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1838,
+        "toYear": 1874,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Fillmore&font=playfair-display",
+        "credit": "Fillmore — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "fullName": "Franklin Pierce",
+    "lastName": "Pierce",
+    "displayName": "Pierce",
+    "party": "Democrat",
+    "birthYear": 1804,
+    "deathYear": 1869,
+    "termStart": 1853,
+    "termEnd": 1857,
+    "summary": "Pierce's support for the Kansas-Nebraska Act reopened the question of slavery in the territories and accelerated the nation's slide toward civil war.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Franklin_Pierce",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Pierce&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1804,
+        "toYear": 1840,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1841,
+        "toYear": 1869,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Pierce&font=playfair-display",
+        "credit": "Pierce — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "fullName": "James Buchanan",
+    "lastName": "Buchanan",
+    "displayName": "Buchanan",
+    "party": "Democrat",
+    "birthYear": 1791,
+    "deathYear": 1868,
+    "termStart": 1857,
+    "termEnd": 1861,
+    "summary": "Often ranked among the least effective presidents, Buchanan failed to halt secession as seven states left the Union before Lincoln took office.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/James_Buchanan",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Buchanan&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1791,
+        "toYear": 1844,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1845,
+        "toYear": 1868,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Buchanan&font=playfair-display",
+        "credit": "Buchanan — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "fullName": "Abraham Lincoln",
+    "lastName": "Lincoln",
+    "displayName": "Lincoln",
+    "party": "Republican",
+    "birthYear": 1809,
+    "deathYear": 1865,
+    "termStart": 1861,
+    "termEnd": 1865,
+    "diedInOffice": true,
+    "summary": "Leading the Union to victory in the Civil War, Lincoln issued the Emancipation Proclamation and preserved the nation before his assassination in 1865.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Lincoln&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1809,
+        "toYear": 1848,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1849,
+        "toYear": 1865,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Lincoln&font=playfair-display",
+        "credit": "Lincoln — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "fullName": "Andrew Johnson",
+    "lastName": "Johnson",
+    "displayName": "A. Johnson",
+    "party": "National Union",
+    "birthYear": 1808,
+    "deathYear": 1875,
+    "termStart": 1865,
+    "termEnd": 1869,
+    "summary": "A Southern Unionist thrust into office by Lincoln's death, Johnson clashed bitterly with Congress over Reconstruction and became the first president impeached.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Andrew_Johnson",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Johnson&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1808,
+        "toYear": 1852,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1853,
+        "toYear": 1875,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Johnson&font=playfair-display",
+        "credit": "A. Johnson — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "fullName": "Ulysses S. Grant",
+    "lastName": "Grant",
+    "displayName": "Grant",
+    "party": "Republican",
+    "birthYear": 1822,
+    "deathYear": 1885,
+    "termStart": 1869,
+    "termEnd": 1877,
+    "summary": "The Union's victorious commanding general, Grant pursued civil rights for freedpeople and crushed the Ku Klux Klan amid an administration marred by scandal.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ulysses_S._Grant",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Grant&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1822,
+        "toYear": 1856,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1857,
+        "toYear": 1885,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Grant&font=playfair-display",
+        "credit": "Grant — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "fullName": "Rutherford B. Hayes",
+    "lastName": "Hayes",
+    "displayName": "Hayes",
+    "party": "Republican",
+    "birthYear": 1822,
+    "deathYear": 1893,
+    "termStart": 1877,
+    "termEnd": 1881,
+    "summary": "Winning a disputed election resolved by the Compromise of 1877, Hayes ended Reconstruction by withdrawing federal troops from the South.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Rutherford_B._Hayes",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Hayes&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1822,
+        "toYear": 1864,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1865,
+        "toYear": 1893,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Hayes&font=playfair-display",
+        "credit": "Hayes — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "fullName": "James A. Garfield",
+    "lastName": "Garfield",
+    "displayName": "Garfield",
+    "party": "Republican",
+    "birthYear": 1831,
+    "deathYear": 1881,
+    "termStart": 1881,
+    "termEnd": 1881,
+    "diedInOffice": true,
+    "summary": "A reform-minded scholar and Civil War general, Garfield was shot months into his term and died that September, spurring civil-service reform.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/James_A._Garfield",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Garfield&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1831,
+        "toYear": 1868,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1869,
+        "toYear": 1881,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Garfield&font=playfair-display",
+        "credit": "Garfield — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "fullName": "Chester A. Arthur",
+    "lastName": "Arthur",
+    "displayName": "Arthur",
+    "party": "Republican",
+    "birthYear": 1829,
+    "deathYear": 1886,
+    "termStart": 1881,
+    "termEnd": 1885,
+    "summary": "Rising from machine politics, Arthur surprised critics by championing the Pendleton Act, which established a merit-based federal civil service.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Chester_A._Arthur",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Arthur&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1829,
+        "toYear": 1868,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1869,
+        "toYear": 1886,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Arthur&font=playfair-display",
+        "credit": "Arthur — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "fullName": "Grover Cleveland",
+    "lastName": "Cleveland",
+    "displayName": "Cleveland",
+    "party": "Democrat",
+    "birthYear": 1837,
+    "deathYear": 1908,
+    "termStart": 1885,
+    "termEnd": 1889,
+    "summary": "A reform Democrat known for honesty and vetoes, Cleveland fought patronage and tariffs in the first of his two non-consecutive terms.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Grover_Cleveland",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Cleveland&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1837,
+        "toYear": 1872,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1873,
+        "toYear": 1908,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Cleveland&font=playfair-display",
+        "credit": "Cleveland — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "fullName": "Benjamin Harrison",
+    "lastName": "Harrison",
+    "displayName": "B. Harrison",
+    "party": "Republican",
+    "birthYear": 1833,
+    "deathYear": 1901,
+    "termStart": 1889,
+    "termEnd": 1893,
+    "summary": "Grandson of William Henry Harrison, he signed the Sherman Antitrust Act and expanded the Navy during a period of rising industrial power.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Benjamin_Harrison",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Harrison&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1833,
+        "toYear": 1876,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1877,
+        "toYear": 1901,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Harrison&font=playfair-display",
+        "credit": "B. Harrison — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "fullName": "Grover Cleveland",
+    "lastName": "Cleveland",
+    "displayName": "Cleveland",
+    "party": "Democrat",
+    "birthYear": 1837,
+    "deathYear": 1908,
+    "termStart": 1893,
+    "termEnd": 1897,
+    "summary": "Returning to office as the only president to serve non-consecutive terms, Cleveland confronted the severe economic depression of the Panic of 1893.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Grover_Cleveland",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Cleveland&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1837,
+        "toYear": 1880,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1881,
+        "toYear": 1908,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Cleveland&font=playfair-display",
+        "credit": "Cleveland — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "fullName": "William McKinley",
+    "lastName": "McKinley",
+    "displayName": "McKinley",
+    "party": "Republican",
+    "birthYear": 1843,
+    "deathYear": 1901,
+    "termStart": 1897,
+    "termEnd": 1901,
+    "diedInOffice": true,
+    "summary": "McKinley led the nation to victory in the Spanish-American War, ushering in an era of overseas empire before his assassination in 1901.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/William_McKinley",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=McKinley&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1843,
+        "toYear": 1884,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1885,
+        "toYear": 1901,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=McKinley&font=playfair-display",
+        "credit": "McKinley — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "fullName": "Theodore Roosevelt",
+    "lastName": "Roosevelt",
+    "displayName": "T. Roosevelt",
+    "party": "Republican",
+    "birthYear": 1858,
+    "deathYear": 1919,
+    "termStart": 1901,
+    "termEnd": 1909,
+    "summary": "A trust-busting progressive and conservationist, Roosevelt expanded federal power, built the Panama Canal, and won the Nobel Peace Prize.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Theodore_Roosevelt",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Roosevelt&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1858,
+        "toYear": 1888,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1889,
+        "toYear": 1919,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Roosevelt&font=playfair-display",
+        "credit": "T. Roosevelt — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "fullName": "William Howard Taft",
+    "lastName": "Taft",
+    "displayName": "Taft",
+    "party": "Republican",
+    "birthYear": 1857,
+    "deathYear": 1930,
+    "termStart": 1909,
+    "termEnd": 1913,
+    "summary": "A reluctant president who later became Chief Justice, Taft pursued antitrust enforcement but split the Republican Party with Roosevelt.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/William_Howard_Taft",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Taft&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1857,
+        "toYear": 1896,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1897,
+        "toYear": 1930,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Taft&font=playfair-display",
+        "credit": "Taft — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "fullName": "Woodrow Wilson",
+    "lastName": "Wilson",
+    "displayName": "Wilson",
+    "party": "Democrat",
+    "birthYear": 1856,
+    "deathYear": 1924,
+    "termStart": 1913,
+    "termEnd": 1921,
+    "summary": "Wilson led the nation through World War I and championed the League of Nations, while presiding over major progressive economic reforms.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Woodrow_Wilson",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Wilson&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1856,
+        "toYear": 1900,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1901,
+        "toYear": 1924,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Wilson&font=playfair-display",
+        "credit": "Wilson — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "fullName": "Warren G. Harding",
+    "lastName": "Harding",
+    "displayName": "Harding",
+    "party": "Republican",
+    "birthYear": 1865,
+    "deathYear": 1923,
+    "termStart": 1921,
+    "termEnd": 1923,
+    "diedInOffice": true,
+    "summary": "Promising a 'return to normalcy' after the war, Harding died in office as scandals like Teapot Dome engulfed his administration.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Warren_G._Harding",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Harding&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1865,
+        "toYear": 1908,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1909,
+        "toYear": 1923,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Harding&font=playfair-display",
+        "credit": "Harding — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "fullName": "Calvin Coolidge",
+    "lastName": "Coolidge",
+    "displayName": "Coolidge",
+    "party": "Republican",
+    "birthYear": 1872,
+    "deathYear": 1933,
+    "termStart": 1923,
+    "termEnd": 1929,
+    "summary": "A man of famously few words, 'Silent Cal' presided over the prosperity of the Roaring Twenties with a hands-off, pro-business philosophy.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Calvin_Coolidge",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Coolidge&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1872,
+        "toYear": 1910,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1911,
+        "toYear": 1933,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Coolidge&font=playfair-display",
+        "credit": "Coolidge — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "fullName": "Herbert Hoover",
+    "lastName": "Hoover",
+    "displayName": "Hoover",
+    "party": "Republican",
+    "birthYear": 1874,
+    "deathYear": 1964,
+    "termStart": 1929,
+    "termEnd": 1933,
+    "summary": "A celebrated humanitarian engineer, Hoover's presidency was overwhelmed by the onset of the Great Depression months after he took office.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Herbert_Hoover",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Hoover&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1874,
+        "toYear": 1916,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1917,
+        "toYear": 1964,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Hoover&font=playfair-display",
+        "credit": "Hoover — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "fullName": "Franklin D. Roosevelt",
+    "lastName": "Roosevelt",
+    "displayName": "F.D. Roosevelt",
+    "party": "Democrat",
+    "birthYear": 1882,
+    "deathYear": 1945,
+    "termStart": 1933,
+    "termEnd": 1945,
+    "diedInOffice": true,
+    "summary": "The only president elected four times, FDR led the nation through the Great Depression with the New Deal and to the brink of victory in World War II.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Roosevelt&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1882,
+        "toYear": 1920,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1921,
+        "toYear": 1945,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Roosevelt&font=playfair-display",
+        "credit": "F.D. Roosevelt — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "fullName": "Harry S. Truman",
+    "lastName": "Truman",
+    "displayName": "Truman",
+    "party": "Democrat",
+    "birthYear": 1884,
+    "deathYear": 1972,
+    "termStart": 1945,
+    "termEnd": 1953,
+    "summary": "Truman ended World War II by authorizing the atomic bomb, then launched the Marshall Plan and NATO at the dawn of the Cold War.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Harry_S._Truman",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Truman&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1884,
+        "toYear": 1932,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1933,
+        "toYear": 1972,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Truman&font=playfair-display",
+        "credit": "Truman — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "fullName": "Dwight D. Eisenhower",
+    "lastName": "Eisenhower",
+    "displayName": "Eisenhower",
+    "party": "Republican",
+    "birthYear": 1890,
+    "deathYear": 1969,
+    "termStart": 1953,
+    "termEnd": 1961,
+    "summary": "Supreme Allied Commander in WWII, Eisenhower built the Interstate Highway System and steered a steady course through early Cold War tensions.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Eisenhower&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1890,
+        "toYear": 1940,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1941,
+        "toYear": 1969,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Eisenhower&font=playfair-display",
+        "credit": "Eisenhower — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "fullName": "John F. Kennedy",
+    "lastName": "Kennedy",
+    "displayName": "Kennedy",
+    "party": "Democrat",
+    "birthYear": 1917,
+    "deathYear": 1963,
+    "termStart": 1961,
+    "termEnd": 1963,
+    "diedInOffice": true,
+    "summary": "A youthful icon of the New Frontier, Kennedy navigated the Cuban Missile Crisis and launched the race to the Moon before his assassination in 1963.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_F._Kennedy",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Kennedy&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1917,
+        "toYear": 1948,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1949,
+        "toYear": 1963,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Kennedy&font=playfair-display",
+        "credit": "Kennedy — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "fullName": "Lyndon B. Johnson",
+    "lastName": "Johnson",
+    "displayName": "L. Johnson",
+    "party": "Democrat",
+    "birthYear": 1908,
+    "deathYear": 1973,
+    "termStart": 1963,
+    "termEnd": 1969,
+    "summary": "Johnson enacted landmark civil rights laws and the Great Society, but his presidency was consumed by the escalating war in Vietnam.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Lyndon_B._Johnson",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Johnson&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1908,
+        "toYear": 1950,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1951,
+        "toYear": 1973,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Johnson&font=playfair-display",
+        "credit": "L. Johnson — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "fullName": "Richard Nixon",
+    "lastName": "Nixon",
+    "displayName": "Nixon",
+    "party": "Republican",
+    "birthYear": 1913,
+    "deathYear": 1994,
+    "termStart": 1969,
+    "termEnd": 1974,
+    "diedInOffice": true,
+    "summary": "Nixon opened relations with China and wound down Vietnam, but resigned in disgrace amid the Watergate scandal, the only president to do so.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Richard_Nixon",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Nixon&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1913,
+        "toYear": 1956,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1957,
+        "toYear": 1994,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Nixon&font=playfair-display",
+        "credit": "Nixon — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "fullName": "Gerald Ford",
+    "lastName": "Ford",
+    "displayName": "Ford",
+    "party": "Republican",
+    "birthYear": 1913,
+    "deathYear": 2006,
+    "termStart": 1974,
+    "termEnd": 1977,
+    "summary": "The only president never elected to national office, Ford sought to heal the nation after Watergate by pardoning Nixon.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Gerald_Ford",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Ford&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1913,
+        "toYear": 1961,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1962,
+        "toYear": 2006,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Ford&font=playfair-display",
+        "credit": "Ford — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "fullName": "Jimmy Carter",
+    "lastName": "Carter",
+    "displayName": "Carter",
+    "party": "Democrat",
+    "birthYear": 1924,
+    "deathYear": 2024,
+    "termStart": 1977,
+    "termEnd": 1981,
+    "summary": "Carter brokered the Camp David Accords between Egypt and Israel, but his term was hobbled by the Iran hostage crisis and economic stagflation.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Jimmy_Carter",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Carter&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1924,
+        "toYear": 1964,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1965,
+        "toYear": 2024,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Carter&font=playfair-display",
+        "credit": "Carter — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "fullName": "Ronald Reagan",
+    "lastName": "Reagan",
+    "displayName": "Reagan",
+    "party": "Republican",
+    "birthYear": 1911,
+    "deathYear": 2004,
+    "termStart": 1981,
+    "termEnd": 1989,
+    "summary": "A former actor whose conservative revolution reshaped politics, Reagan cut taxes, expanded the military, and helped bring the Cold War toward its end.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ronald_Reagan",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Reagan&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1911,
+        "toYear": 1968,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1969,
+        "toYear": 2004,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Reagan&font=playfair-display",
+        "credit": "Reagan — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "fullName": "George H. W. Bush",
+    "lastName": "Bush",
+    "displayName": "G.H.W. Bush",
+    "party": "Republican",
+    "birthYear": 1924,
+    "deathYear": 2018,
+    "termStart": 1989,
+    "termEnd": 1993,
+    "summary": "Bush guided the nation through the fall of the Berlin Wall and led a broad coalition to victory in the Gulf War.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/George_H._W._Bush",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Bush&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1924,
+        "toYear": 1976,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1977,
+        "toYear": 2018,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Bush&font=playfair-display",
+        "credit": "G.H.W. Bush — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "fullName": "Bill Clinton",
+    "lastName": "Clinton",
+    "displayName": "Clinton",
+    "party": "Democrat",
+    "birthYear": 1946,
+    "deathYear": null,
+    "termStart": 1993,
+    "termEnd": 2001,
+    "summary": "Presiding over a booming economy and budget surpluses, Clinton pursued centrist reforms but was impeached and acquitted in his second term.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Bill_Clinton",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Clinton&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1946,
+        "toYear": 1980,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1981,
+        "toYear": 2026,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Clinton&font=playfair-display",
+        "credit": "Clinton — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "fullName": "George W. Bush",
+    "lastName": "Bush",
+    "displayName": "G.W. Bush",
+    "party": "Republican",
+    "birthYear": 1946,
+    "deathYear": null,
+    "termStart": 2001,
+    "termEnd": 2009,
+    "summary": "Bush responded to the September 11 attacks by launching the War on Terror and invasions of Afghanistan and Iraq.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/George_W._Bush",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Bush&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1946,
+        "toYear": 1988,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1989,
+        "toYear": 2026,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Bush&font=playfair-display",
+        "credit": "G.W. Bush — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "fullName": "Barack Obama",
+    "lastName": "Obama",
+    "displayName": "Obama",
+    "party": "Democrat",
+    "birthYear": 1961,
+    "deathYear": null,
+    "termStart": 2009,
+    "termEnd": 2017,
+    "summary": "The first African American president, Obama signed the Affordable Care Act and steered the nation out of the Great Recession.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Barack_Obama",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Obama&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1961,
+        "toYear": 1996,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 1997,
+        "toYear": 2026,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Obama&font=playfair-display",
+        "credit": "Obama — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "fullName": "Donald Trump",
+    "lastName": "Trump",
+    "displayName": "Trump",
+    "party": "Republican",
+    "birthYear": 1946,
+    "deathYear": null,
+    "termStart": 2017,
+    "termEnd": 2021,
+    "summary": "A businessman and political outsider, Trump cut taxes and reshaped the judiciary in a turbulent first term that ended after a single election defeat.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Donald_Trump",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Trump&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1946,
+        "toYear": 2004,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 2005,
+        "toYear": 2026,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Trump&font=playfair-display",
+        "credit": "Trump — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "fullName": "Joe Biden",
+    "lastName": "Biden",
+    "displayName": "Biden",
+    "party": "Democrat",
+    "birthYear": 1942,
+    "deathYear": null,
+    "termStart": 2021,
+    "termEnd": 2025,
+    "summary": "The oldest person elected president, Biden passed major infrastructure and climate legislation while guiding the nation out of the COVID-19 pandemic.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Joe_Biden",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Biden&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1942,
+        "toYear": 2008,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 2009,
+        "toYear": 2026,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Biden&font=playfair-display",
+        "credit": "Biden — placeholder portrait"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "fullName": "Donald Trump",
+    "lastName": "Trump",
+    "displayName": "Trump",
+    "party": "Republican",
+    "birthYear": 1946,
+    "deathYear": null,
+    "termStart": 2025,
+    "termEnd": 2029,
+    "summary": "Returning to power after a four-year gap, Trump became only the second president to serve non-consecutive terms.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Donald_Trump",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Trump&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
+    "portraits": [
+      {
+        "fromYear": 1946,
+        "toYear": 2012,
+        "url": "",
+        "credit": "placeholder — no known portrait from this period"
+      },
+      {
+        "fromYear": 2013,
+        "toYear": 2026,
+        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Trump&font=playfair-display",
+        "credit": "Trump — placeholder portrait"
+      }
+    ]
+  }
+]

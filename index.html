@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presidents in Time</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* ===== app-specific layout ===== */
+  html, body { height: 100%; }
+  body { display: flex; flex-direction: column; overflow: hidden; }
+
+  :root { --col-w: 110px; --colhead-h: 60px; }
+
+  /* ---- filter toolbar (below header, above sticky column heads) ---- */
+  .toolbar {
+    flex: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 28px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--hairline);
+    position: relative;
+    z-index: 50;
+  }
+  .toolbar .lead {
+    font-family: var(--serif);
+    font-size: 15px;
+    color: var(--ink-soft);
+  }
+  .toolbar .lead strong { font-weight: 500; color: var(--ink); }
+
+  .filter-wrap { position: relative; margin-left: auto; }
+  #filter-btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-family: var(--sans); font-size: 13.5px; font-weight: 500;
+    color: var(--ink);
+    background: var(--panel);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius);
+    padding: 9px 14px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  #filter-btn:hover, #filter-btn.active { border-color: var(--muted); }
+  #filter-btn svg { color: var(--muted); }
+  #filter-count { color: var(--muted); font-weight: 400; }
+
+  /* ---- filter dropdown panel ---- */
+  #filter-panel {
+    position: absolute;
+    top: calc(100% + 8px); right: 0;
+    width: 340px;
+    background: var(--panel);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius);
+    box-shadow: 0 18px 50px -16px rgba(40,36,28,0.28);
+    padding: 12px;
+    display: none;
+    z-index: 80;
+  }
+  #filter-panel.open { display: block; }
+  #filter-search {
+    width: 100%;
+    font-family: var(--sans); font-size: 14px;
+    padding: 9px 12px;
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius);
+    background: var(--bg);
+    color: var(--ink);
+    outline: none;
+  }
+  #filter-search:focus { border-color: var(--muted); }
+  .filter-bulk {
+    display: flex; gap: 18px;
+    padding: 10px 4px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 4px;
+  }
+  .filter-bulk button {
+    font-family: var(--sans); font-size: 12.5px; font-weight: 500;
+    color: var(--color-in-term);
+    background: none; border: none; padding: 0; cursor: pointer;
+  }
+  .filter-bulk button:hover { text-decoration: underline; }
+  #filter-list { max-height: 360px; overflow-y: auto; }
+  .filter-row {
+    display: grid;
+    grid-template-columns: 18px 34px 1fr auto;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: var(--sans); font-size: 13.5px;
+  }
+  .filter-row:hover { background: var(--bg); }
+  .filter-row input { accent-color: var(--color-in-term); width: 15px; height: 15px; }
+  .filter-row .fr-term { color: var(--muted); font-weight: 400; font-size: 12px; }
+  .filter-row .fr-name { color: var(--ink); font-weight: 500; }
+  .filter-row .fr-party { color: var(--muted); font-size: 11.5px; text-align: right; white-space: nowrap; }
+
+  /* ---- scroll viewport & grid ---- */
+  #grid-scroll {
+    flex: 1 1 auto;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+  #grid {
+    display: flex;
+    gap: var(--gap);
+    padding: 0 28px 80px 0;
+    width: max-content;
+    align-items: flex-start;
+  }
+
+  .col { display: flex; flex-direction: column; gap: var(--gap); flex: none; }
+
+  /* year axis column — sticky to the left edge */
+  .col-years {
+    position: sticky;
+    left: 0;
+    z-index: 30;
+    background: var(--bg);
+    padding: 0 14px 0 28px;
+    margin-right: 2px;
+  }
+  .corner {
+    position: sticky; top: 0;
+    height: var(--colhead-h);
+    display: flex; align-items: flex-end; padding-bottom: 8px;
+    background: var(--bg);
+    z-index: 5;
+    font-family: var(--sans); font-size: 11px; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+  }
+  .year-label {
+    height: var(--col-w);
+    display: flex; align-items: center; gap: 6px;
+    font-family: var(--sans); font-size: 13px; font-weight: 500;
+    color: var(--ink-soft);
+    scroll-margin-top: 80px;
+  }
+  .year-label .yr { font-variant-numeric: tabular-nums; }
+  .year-label .copy-link {
+    opacity: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 22px; height: 22px;
+    border: none; background: none; padding: 0; cursor: pointer;
+    color: var(--muted); border-radius: 5px;
+    transition: opacity 0.12s ease, color 0.12s ease, background 0.12s ease;
+  }
+  .year-label:hover .copy-link { opacity: 1; }
+  .year-label .copy-link:hover { color: var(--ink); background: var(--hairline); }
+  .year-label .copy-link.copied { color: var(--color-in-term); opacity: 1; }
+  .year-label.flash .yr { color: var(--color-in-term); }
+
+  /* president columns */
+  .col.president { width: var(--col-w); }
+  .col.president.collapsed { display: none; }
+
+  .colhead {
+    position: sticky; top: 0;
+    height: var(--colhead-h);
+    z-index: 4;
+    background: var(--bg);
+    display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+  .colhead .term {
+    font-family: var(--sans); font-size: 11px; font-weight: 400;
+    color: var(--muted); line-height: 1.2;
+  }
+  .colhead .name {
+    font-family: var(--serif); font-size: 14px; font-weight: 500;
+    color: var(--ink); line-height: 1.2; letter-spacing: 0.005em;
+  }
+
+  /* cells */
+  .cell {
+    position: relative;
+    width: var(--col-w); height: var(--col-w);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: transparent;
+  }
+  .cell.empty.unborn   { background: var(--cell-unborn); }
+  .cell.empty.deceased { background: var(--cell-deceased); }
+  /* in-term gold frame drawn INSIDE the cell (clipped) so it never
+     bleeds past the sticky column-header row when scrolling. */
+  .cell.in-term::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 3px var(--color-in-term);
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .cell .thumb {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background: var(--cell-unborn);
+  }
+  .cell .thumb.loaded { opacity: 1; }
+  /* alive-but-no-assigned-portrait: soft cream name-placeholder (no brown sepia) */
+  .cell .thumb.is-placeholder {
+    filter: grayscale(0.4) brightness(1.09);
+    opacity: 0;
+  }
+  .cell .thumb.is-placeholder.loaded { opacity: 0.62; }
+  .cell .thumb.errored { opacity: 0; }
+
+  /* ---- popover ---- */
+  #popover {
+    position: fixed;
+    width: 260px;
+    background: var(--panel);
+    border-radius: var(--radius);
+    box-shadow: 0 22px 60px -18px rgba(40,36,28,0.4);
+    overflow: hidden;
+    z-index: 90;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(4px);
+    transition: opacity 0.14s ease, transform 0.14s ease, visibility 0.14s;
+    pointer-events: none;
+  }
+  #popover.visible { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+  #popover .po-portrait { aspect-ratio: 3 / 4; background: var(--cell-unborn); }
+  #popover .po-portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #popover .po-body { padding: 16px 18px 18px; }
+  #popover .po-term {
+    font-family: var(--sans); font-size: 11px; font-weight: 400;
+    color: var(--muted); letter-spacing: 0.04em;
+  }
+  #popover .po-name {
+    font-family: var(--serif); font-size: 20px; font-weight: 500;
+    color: var(--ink); line-height: 1.15; margin: 1px 0 7px;
+  }
+  #popover .po-meta {
+    font-family: var(--sans); font-size: 12.5px; color: var(--ink-soft);
+    margin-bottom: 10px;
+  }
+  #popover .po-summary {
+    font-family: var(--serif); font-size: 14px; line-height: 1.5;
+    color: var(--ink-soft); margin: 0 0 12px; text-wrap: pretty;
+  }
+  #popover .po-life { font-weight: 500; color: var(--ink); white-space: nowrap; }
+  #popover .po-wiki {
+    font-family: var(--sans); font-size: 13px; font-weight: 500;
+    color: var(--ink); text-decoration: none;
+    border-bottom: 1px solid var(--color-in-term); padding-bottom: 1px;
+  }
+  #popover .po-wiki:hover { color: var(--color-in-term); }
+  #popover .po-credit {
+    font-family: var(--sans); font-size: 10.5px; color: var(--muted);
+    margin-top: 12px; line-height: 1.4;
+  }
+
+  .load-error {
+    font-family: var(--sans); color: var(--ink-soft); padding: 80px 28px;
+    text-align: center; font-size: 16px;
+  }
+  .load-error small { color: var(--muted); }
+</style>
+</head>
+<body>
+
+  <!-- ===== portable page header ===== -->
+  <header class="site-header">
+    <a class="logo" href="index.html">Presidents in Time<span class="dot">.</span></a>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Grid</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- ===== filter toolbar ===== -->
+  <div class="toolbar">
+    <span class="lead"><strong>47 presidents</strong> across three centuries</span>
+    <div class="filter-wrap">
+      <button id="filter-btn">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18M6 12h12M10 19h4"/></svg>
+        <span id="filter-count">All 47 presidents</span>
+      </button>
+      <div id="filter-panel">
+        <input id="filter-search" type="text" placeholder="Filter by name or party…" autocomplete="off">
+        <div class="filter-bulk">
+          <button id="enable-all">Enable all</button>
+          <button id="disable-all">Disable all</button>
+        </div>
+        <div id="filter-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== grid ===== -->
+  <div id="grid-scroll">
+    <div id="grid"></div>
+  </div>
+
+  <!-- ===== hover popover (single reused node) ===== -->
+  <div id="popover"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
