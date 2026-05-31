@@ -53,6 +53,7 @@ a { color: inherit; }
   position: sticky;
   top: 0;
   z-index: 60;
+  flex: none;
   height: var(--header-h);
   display: flex;
   align-items: center;
