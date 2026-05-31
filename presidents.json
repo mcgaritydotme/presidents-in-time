@@ -15,16 +15,18 @@
     "defaultPortraitCredit": "placeholder image · replace with public-domain portrait",
     "portraits": [
       {
-        "fromYear": 1732,
-        "toYear": 1776,
-        "url": "",
-        "credit": "placeholder — no known portrait from this period"
+        "fromYear": 1789,
+        "toYear": 1793,
+        "url": "01-thumbnail-1789.jpg",
+        "popoverUrl": "01-popover-1789.jpg",
+        "credit": "TBD"
       },
       {
-        "fromYear": 1777,
-        "toYear": 1799,
-        "url": "https://placehold.co/300x300/e9e3d4/736a5b?text=Washington&font=playfair-display",
-        "credit": "Washington — placeholder portrait"
+        "fromYear": 1793,
+        "toYear": 1797,
+        "url": "01-thumbnail-1793.jpg",
+        "popoverUrl": "01-popover-1793.jpg",
+        "credit": "TBD"
       }
     ]
   },
