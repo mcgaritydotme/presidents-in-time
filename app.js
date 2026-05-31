@@ -63,6 +63,16 @@
            encodeURIComponent(name) + '&font=playfair-display';
   }
 
+  // Resolve a portrait path. Bare relative paths (e.g. "01-washington-default.jpg")
+  // are assumed to live under images/, so the JSON can omit that prefix. Absolute
+  // URLs (http(s)://, //, data:) and empty strings are returned untouched.
+  function resolveImg(url) {
+    if (!url) return url;
+    if (/^(https?:)?\/\//i.test(url) || /^data:/i.test(url)) return url;
+    return url.replace(/^\.?\/*/, '').replace(/^images\//, '') // tolerate either form
+              .replace(/^/, 'images/');
+  }
+
   // Half-open ranges: a portrait with fromYear–toYear shows in grid rows where
   // fromYear <= year < toYear. So "1801–1805" covers exactly the 1801 window
   // (the 1801 row), not the 1805 row — matching how a term reads (1801→1805).
@@ -176,7 +186,7 @@
     // Any placeholder (empty url, or a placehold.co stand-in) gets the unified
     // cream name-placeholder treatment, so all of a president's pre-photo cells match.
     const pt = portraitFor(p, y);
-    const realImg = (pt && pt.url && !/placehold\.co/i.test(pt.url)) ? pt.url : null;
+    const realImg = (pt && pt.url && !/placehold\.co/i.test(pt.url)) ? resolveImg(pt.url) : null;
     const src = realImg || namePlaceholder(p.displayName);
 
     const img = document.createElement('img');
@@ -188,8 +198,8 @@
 
     if (inTerm(p, y)) cell.classList.add('in-term');
 
-    // hover popover — always uses the canonical default portrait
-    cell.addEventListener('mouseenter', () => showPopover(p, cell));
+    // hover popover — shows the portrait paired with THIS cell's period
+    cell.addEventListener('mouseenter', () => showPopover(p, cell, y));
     cell.addEventListener('mouseleave', hidePopover);
 
     return cell;
@@ -220,20 +230,35 @@
 
   let popoverTimer = null;
 
-  function showPopover(p, cell) {
+  function showPopover(p, cell, y) {
     clearTimeout(popoverTimer);
     const po = els.popover;
     const inOffice = p.termStart + '–' + p.termEnd;
     const lifespan = p.deathYear === null
       ? '(born ' + p.birthYear + ') '
       : '(b. ' + p.birthYear + ' — d. ' + p.deathYear + ') ';
-    // Only show a credit line under a genuine portrait — never under a placeholder.
-    const hasRealPortrait = p.defaultPortraitUrl && !/placehold\.co/i.test(p.defaultPortraitUrl);
-    const creditHtml = (hasRealPortrait && p.defaultPortraitCredit)
-      ? '<div class="po-credit">' + p.defaultPortraitCredit + '</div>'
+
+    // Per-period popover: hovering a cell shows the portrait paired with THAT
+    // period's portraits[] entry (popoverUrl). Periods without their own
+    // popoverUrl fall back to the president's defaultPortraitUrl.
+    const pt = portraitFor(p, y);
+    const periodPopover = (pt && pt.popoverUrl && !/placehold\.co/i.test(pt.popoverUrl))
+      ? pt.popoverUrl : null;
+    const portraitSrc = resolveImg(periodPopover || p.defaultPortraitUrl);
+
+    // Credit follows the image being shown: the period's credit when it has its
+    // own popover image, otherwise the default credit (only for a real default).
+    let creditText = '';
+    if (periodPopover) {
+      creditText = pt.credit || '';
+    } else if (p.defaultPortraitUrl && !/placehold\.co/i.test(p.defaultPortraitUrl)) {
+      creditText = p.defaultPortraitCredit || '';
+    }
+    const creditHtml = creditText
+      ? '<div class="po-credit">' + creditText + '</div>'
       : '';
     po.innerHTML =
-      '<div class="po-portrait"><img src="' + p.defaultPortraitUrl + '" alt="' + p.fullName + '"></div>' +
+      '<div class="po-portrait"><img src="' + portraitSrc + '" alt="' + p.fullName + '"></div>' +
       '<div class="po-body">' +
         '<div class="po-term">#' + p.id + '</div>' +
         '<div class="po-name">' + p.fullName + '</div>' +

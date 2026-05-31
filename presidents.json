@@ -69,7 +69,7 @@
     "termEnd": 1809,
     "summary": "Principal author of the Declaration of Independence, Jefferson doubled the nation's size through the Louisiana Purchase and championed agrarian democracy and limited government.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_Jefferson",
-    "defaultPortraitUrl": "images/03-jefferson-default.jpg",
+    "defaultPortraitUrl": "03-jefferson-default.jpg",
     "defaultPortraitCredit": "Portrait by Rembrandt Peale",
     "portraits": [
       {
@@ -81,14 +81,16 @@
       {
         "fromYear": 1801,
         "toYear": 1805,
-        "url": "images/03-jefferson-thumbnail-1801.jpeg",
-        "credit": "Rembrandt Peale"
+        "url": "03-thumbnail-1801.jpg",
+        "popoverUrl": "03-popover-1801.jpg",
+        "credit": "Rembrandt Peale, 1800"
       },
       {
         "fromYear": 1805,
         "toYear": 1809,
-        "url": "images/03-jefferson-thumbnail-1805.png",
-        "credit": "Rembrant Peale"
+        "url": "03-thumbnail-1805.jpeg",
+        "popoverUrl": "03-popover-1805.jpeg",
+        "credit": "Rembrandt Peale, 1805"
       },
       {
         "fromYear": 1809,

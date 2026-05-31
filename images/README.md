@@ -2,55 +2,91 @@
 
 Drop portrait files here and point presidents.json at them with relative paths.
 
-There are TWO image slots, meant to hold DIFFERENT crops:
+There are TWO image slots per portrait, meant to hold DIFFERENT crops:
 
   • Hover popover   — tall (~3:4). A FULLER view: face, torso, background.
   • Grid thumbnail  — square. A TIGHT face close-up.
 
 These are different framings, not just different aspect ratios, so author two
-separate files per president. (CSS only center-crops; it can't turn a full portrait
-into a face close-up.)
+separate files. (CSS only center-crops; it can't turn a full portrait into a face
+close-up.)
+
+Both slots are PER-PERIOD: a president can have different portraits for different
+stretches of the grid, and hovering a given grid thumbnail shows the popover image
+paired with that same period.
 
 ## Naming convention
-  NN-lastname-default.jpg      popover portrait  — ~3:4, fuller framing
-  NN-lastname-thumbnail.jpg    grid thumbnail    — square, tight face crop
+  NN-popover-YYYY.<ext>      popover portrait  — ~3:4, fuller framing
+  NN-thumbnail-YYYY.<ext>    grid thumbnail    — square, tight face crop
 
-  NN  = president id, zero-padded to 2 digits (see "id" in presidents.json)
-  lastname = lowercase, no spaces (e.g. vanburen, wh-harrison)
-  (.jpg / .jpeg / .png / .webp all work — match the extension in the JSON.)
+  NN   = president id, zero-padded to 2 digits (see "id" in presidents.json)
+  YYYY = the fromYear of the period this image covers (its portraits[] entry)
+  <ext> = jpg / jpeg / png / webp — must match the extension in the JSON.
 
-If a president needs different thumbnails for different periods of the grid, add a
-range label, e.g.:
-  03-jefferson-1801-thumbnail.jpeg   16-lincoln-young-thumbnail.jpg
+A popover and thumbnail that share the same NN and YYYY are a matched PAIR: hovering
+NN-thumbnail-YYYY shows NN-popover-YYYY.
 
-WORKED EXAMPLE — Thomas Jefferson (id 3):
-  images/03-jefferson-default.jpg          -> popover (1610x1920, Rembrandt Peale)
-  images/03-jefferson-thumbnail-1801.jpeg  -> grid thumbnail, 1801–1805 term
-  images/03-jefferson-thumbnail-1805.png   -> grid thumbnail, 1805–1809 term
+WORKED EXAMPLE — Thomas Jefferson (id 3), two terms:
+  images/03-thumbnail-1801.jpg   +  images/03-popover-1801.jpg    (1801–1805)
+  images/03-thumbnail-1805.jpeg  +  images/03-popover-1805.jpeg   (1805–1809)
 
 ## Wiring it in presidents.json
-- "defaultPortraitUrl": "images/NN-lastname-default.jpg"
-    The portrait shown in the hover popover. ONLY this field feeds the popover.
-- "defaultPortraitCredit": "Portrait by ..."
-    Credit line shown under the popover image.
-- "portraits": [ { fromYear, toYear, "url": "images/NN-lastname-thumbnail.jpg", "credit": "..." } ]
-    The square thumbnail shown in grid cells for that year range.
-    Ranges are HALF-OPEN: a row labelled YYYY is the 4-year window YYYY..YYYY+4, and
-    an entry shows where fromYear <= year < toYear. So a single term reads naturally —
-    1801–1805 covers ONLY the 1801 window (not the 1805 row); the next term is 1805–1809.
-    Keep ranges contiguous (each toYear == the next fromYear) to avoid gaps.
+Image paths are resolved relative to the images/ folder automatically, so you can
+write just the filename — the leading "images/" is optional (both forms work).
+
+Each period lives in the president's "portraits" array:
+
+  "portraits": [
+    {
+      "fromYear": 1801,
+      "toYear": 1805,
+      "url":        "03-thumbnail-1801.jpg",   // square grid thumbnail
+      "popoverUrl": "03-popover-1801.jpg",     // 3:4 popover, paired with that thumbnail
+      "credit":     "Rembrandt Peale, 1800"    // shown under THIS period's popover
+    }
+  ]
+
+- "url" — the square thumbnail shown in grid cells for this year range.
+- "popoverUrl" — the 3:4 portrait shown in the hover popover for cells in this range.
+    OPTIONAL. If omitted, the popover falls back to the president's defaultPortraitUrl.
+- "credit" — credit line shown under the popover, but ONLY when this period has its
+    own popoverUrl. (Periods without a popoverUrl fall back to defaultPortraitCredit.)
+
+Ranges are HALF-OPEN: a row labelled YYYY is the 4-year window YYYY..YYYY+4, and an
+entry applies where fromYear <= year < toYear. So a single term reads naturally —
+1801–1805 covers ONLY the 1801 window (not the 1805 row); the next term is 1805–1809.
+Keep ranges contiguous (each toYear == the next fromYear) to avoid gaps.
+
+### President-level fallback (defaultPortraitUrl)
+- "defaultPortraitUrl": "..." — the popover portrait used for any period that does
+    NOT define its own popoverUrl. Handy when one portrait covers a whole presidency.
+- "defaultPortraitCredit": "Portrait by ..." — credit shown under that default image.
 
 A grid cell shows a real photo only when its url is a real file (anything that is NOT
 empty and NOT a placehold.co link). For year ranges with no known likeness, leave
-"url": "" — those cells fall back to a self-contained cream NAME card (the
-president's display name). That name card is generated by the app and does NOT use
-defaultPortraitUrl, so the popover portrait and the grid placeholders are fully
-independent.
+"url": "" (or omit the period entirely — see below). Those cells fall back to a
+self-contained cream NAME card (the president's display name), generated by the app.
 
-## If you only have one image
-Point defaultPortraitUrl at it for the popover, and leave the matching grid years as
-"" (cream name card) until you have a square crop. Or reuse the same file as the
-thumbnail url — it will just be center-cropped to a square (may clip the head/shoulders).
+### Placeholder/empty portrait blocks are OPTIONAL
+You do NOT need an explicit block for years you have no photo. A block with
+"url": "" and a completely missing block render identically — both produce the cream
+NAME card. So you can delete every empty/placeholder entry and just list the year
+ranges you actually have images for; any uncovered year auto-falls-back to the name
+card.
+
+The ONE requirement: every president must still have a "portraits" key, even if it is
+just an empty array. The app loops over portraits[], so omitting it entirely will
+break that president's cells.
+
+  "portraits": []   ✅  no real photos — every year shows the name card
+  (key omitted)     ❌  crashes that president's column
+
+## If you only have one image for a period
+Set "url" to the square thumbnail and leave "popoverUrl" off — the popover will use
+defaultPortraitUrl. Or, if you only have a 3:4 image, set "popoverUrl" and leave
+"url": "" so the grid shows the cream name card until you have a square crop. (You can
+also reuse a 3:4 file as the thumbnail url; it'll just be center-cropped to a square,
+which may clip the head/shoulders.)
 
 ## Image specs
 - Popover file:    ~3:4 (e.g. 1600x1920 or 600x800), subject centred.
