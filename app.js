@@ -86,11 +86,13 @@
   //     died-in-office president's final row past their last range still shows their
   //     portrait (e.g. Lincoln's 1849–1865 portrait in the 1865 row he rings), and
   //     never collapses to a blank/name-card cell.
+  // If nothing has begun yet (a born-but-pre-portrait row, e.g. Washington before his
+  // 1789 term), return null so the cell falls back to the cream name placeholder —
+  // we must NOT surface a later period early.
   function portraitFor(p, y) {
     const end = y + STEP;
-    let overlap = null, latestStarted = null, earliest = null;
+    let overlap = null, latestStarted = null;
     for (const pt of p.portraits) {
-      if (!earliest || pt.fromYear < earliest.fromYear) earliest = pt;
       if (pt.fromYear < end && pt.toYear > y) {
         if (!overlap || pt.fromYear > overlap.fromYear) overlap = pt;
       }
@@ -98,7 +100,7 @@
         latestStarted = pt;
       }
     }
-    return overlap || latestStarted || earliest;
+    return overlap || latestStarted;
   }
 
   /* ---------- URL state (filter) ---------- */
