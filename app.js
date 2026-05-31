@@ -73,14 +73,32 @@
               .replace(/^/, 'images/');
   }
 
-  // Half-open ranges: a portrait with fromYear–toYear shows in grid rows where
-  // fromYear <= year < toYear. So "1801–1805" covers exactly the 1801 window
-  // (the 1801 row), not the 1805 row — matching how a term reads (1801→1805).
+  // Pick the portrait period to show in a given grid row [y, y+STEP).
+  // Periods are authored as contiguous ranges, but term-boundary ranges don't always
+  // line up with the 4-year rows — a president who dies or takes office mid-row shares
+  // that row with their predecessor/successor. So we match by OVERLAP with the row
+  // window, not a single point:
+  //   • If any period overlaps [y, y+STEP), use the most recent (latest fromYear) one.
+  //     This keeps "one term = one row" (1801–1805 rings only the 1801 row) while
+  //     letting a successor's in-office portrait fill a partial first row (e.g. Fillmore
+  //     in the 1849 row he enters in 1850).
+  //   • Otherwise fall back to the latest period that has already begun — so a
+  //     died-in-office president's final row past their last range still shows their
+  //     portrait (e.g. Lincoln's 1849–1865 portrait in the 1865 row he rings), and
+  //     never collapses to a blank/name-card cell.
   function portraitFor(p, y) {
+    const end = y + STEP;
+    let overlap = null, latestStarted = null, earliest = null;
     for (const pt of p.portraits) {
-      if (y >= pt.fromYear && y < pt.toYear) return pt;
+      if (!earliest || pt.fromYear < earliest.fromYear) earliest = pt;
+      if (pt.fromYear < end && pt.toYear > y) {
+        if (!overlap || pt.fromYear > overlap.fromYear) overlap = pt;
+      }
+      if (pt.fromYear <= y && (!latestStarted || pt.fromYear > latestStarted.fromYear)) {
+        latestStarted = pt;
+      }
     }
-    return null;
+    return overlap || latestStarted || earliest;
   }
 
   /* ---------- URL state (filter) ---------- */
