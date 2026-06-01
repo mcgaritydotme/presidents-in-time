@@ -102,9 +102,16 @@
     "portraits": [
       {
         "fromYear": 1809,
-        "toYear": 1817,
+        "toYear": 1813,
         "url": "04-thumbnail-1809.jpg",
         "popoverUrl": "04-popover-1809.jpg",
+        "credit": "Thomas Sully (derived from Gilbert Stuart), James Madison, 1809. Oil on panel, 27 1/2 x 19 1/2 in., National Portrait Gallery"
+      },
+      {
+        "fromYear": 1813,
+        "toYear": 1817,
+        "url": "04-thumbnail-1813.jpg",
+        "popoverUrl": "04-popover-1813.jpg",
         "credit": "John Vanderlyn, James Madison, 1816. Oil on canvas, 26 x 22 3/16 in., White House Collection"
       }
     ]
