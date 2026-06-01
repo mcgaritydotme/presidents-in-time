@@ -19,14 +19,14 @@
         "toYear": 1793,
         "url": "01-thumbnail-1789.jpg",
         "popoverUrl": "01-popover-1789.jpg",
-        "credit": "Gilbert Stuart, George Washington, 1803. oil on canvas, 29 x 24 in., Clark Art Institute"
+        "credit": "Gilbert Stuart, George Washington, 1803. Oil on canvas, 29 x 24 in., Clark Art Institute"
       },
       {
         "fromYear": 1793,
         "toYear": 1797,
         "url": "01-thumbnail-1793.jpg",
         "popoverUrl": "01-popover-1793.jpg",
-        "credit": "Gilbert Stuart, George Washington (Lansdowne Portrait), 1796. oil on canvas, 97 1/2 x 62 1/2 in., National Portrait Gallery"
+        "credit": "Gilbert Stuart, George Washington (Lansdowne Portrait), 1796. Oil on canvas, 97 1/2 x 62 1/2 in., National Portrait Gallery"
       }
     ]
   },
@@ -50,7 +50,7 @@
         "toYear": 1801,
         "url": "02-thumbnail-1797.jpg",
         "popoverUrl": "02-popover-1797.jpg",
-        "credit": "Gilbert Stuart, John Adams, c. 1800. oil on canvas, 29 x 24 in., National Gallery of Art"
+        "credit": "Gilbert Stuart, John Adams, c. 1800. Oil on canvas, 29 x 24 in., National Gallery of Art"
       }
     ]
   },
@@ -66,22 +66,22 @@
     "termEnd": 1809,
     "summary": "Principal author of the Declaration of Independence, Jefferson doubled the nation's size through the Louisiana Purchase and championed agrarian democracy and limited government.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_Jefferson",
-    "defaultPortraitUrl": "03-default.jpg",
-    "defaultPortraitCredit": "Portrait by Rembrandt Peale",
+    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Jefferson&font=playfair-display",
+    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
     "portraits": [
       {
         "fromYear": 1801,
         "toYear": 1805,
         "url": "03-thumbnail-1801.jpg",
         "popoverUrl": "03-popover-1801.jpg",
-        "credit": "Rembrandt Peale, Thomas Jefferson, 1800. oil on canvas, 23 1/8 x 19 1/4 in., White House Collection/White House Historical Association"
+        "credit": "Rembrandt Peale, Thomas Jefferson, 1800. Oil on canvas, 23 1/8 x 19 1/4 in., White House Collection/White House Historical Association"
       },
       {
         "fromYear": 1805,
         "toYear": 1809,
         "url": "03-thumbnail-1805.jpeg",
         "popoverUrl": "03-popover-1805.jpeg",
-        "credit": "Rembrandt Peale, Thomas Jefferson, 1805. oil on linen, 28 x 23 1/2 in., Smithsonian American Art Museum/New-York Historical Society, Gift of Thomas Jefferson Bryan"
+        "credit": "Rembrandt Peale, Thomas Jefferson, 1805. Oil on linen, 28 x 23 1/2 in., Smithsonian American Art Museum/New-York Historical Society, Gift of Thomas Jefferson Bryan"
       }
     ]
   },
@@ -105,7 +105,7 @@
         "toYear": 1817,
         "url": "04-thumbnail-1809.jpg",
         "popoverUrl": "04-popover-1809.jpg",
-        "credit": "John Vanderlyn, James Madison, 1816. oil on canvas, 26 x 22 3/16 in., White House Collection"
+        "credit": "John Vanderlyn, James Madison, 1816. Oil on canvas, 26 x 22 3/16 in., White House Collection"
       }
     ]
   },
@@ -126,10 +126,17 @@
     "portraits": [
       {
         "fromYear": 1817,
-        "toYear": 1825,
+        "toYear": 1821,
         "url": "05-thumbnail-1817.jpg",
         "popoverUrl": "05-popover-1817.jpg",
-        "credit": "Samuel Finley Breese Morse, Portrait of James Monroe, c. 1819. oil on canvas, 29 1/2 x 24 1/2 in., White House Collection"
+        "credit": "Samuel Finley Breese Morse, Portrait of James Monroe, c. 1819. Oil on canvas, 29 1/2 x 24 1/2 in., White House Collection/White House Historical Association"
+      },
+      {
+        "fromYear": 1821,
+        "toYear": 1825,
+        "url": "05-thumbnail-1821.jpg",
+        "popoverUrl": "05-popover-1821.jpg",
+        "credit": "Gilbert Stuart, James Monroe, c. 1820-22. Oil on canvas, 40 1/4 x 32 in., The Metropoliatan Museum of Art"
       }
     ]
   },
@@ -153,7 +160,7 @@
         "toYear": 1829,
         "url": "06-thumbnail-1825.jpg",
         "popoverUrl": "06-popover-1825.jpg",
-        "credit": "TBD"
+        "credit": "Gilbert Stuart & Thomas Sully, John Quincy Adams, 1825-1830. Oil on canvas, 95 x 59 3/4 in., Harvard University Portrait Collection, Bequest of Ward Nicholas Boylston to Harvard College, 1828"
       }
     ]
   },
@@ -174,10 +181,17 @@
     "portraits": [
       {
         "fromYear": 1829,
-        "toYear": 1837,
+        "toYear": 1833,
         "url": "07-thumbnail-1829.jpg",
         "popoverUrl": "07-popover-1829.jpg",
-        "credit": "TBD"
+        "credit": "Thomas Sully, Andrew Jackson, 1824. Oil on canvas, 23 1/4 x 19 1/2 in., National Portrait Gallery"
+      },
+      {
+        "fromYear": 1833,
+        "toYear": 1837,
+        "url": "07-thumbnail-1833.jpg",
+        "popoverUrl": "07-popover-1833.jpg",
+        "credit": "Ralph Eleaser Whiteside Earl, Andrew Jackson, 1835. Oil on canvas, 30 x 25 in., White House Collection/White House Historical Association"
       }
     ]
   },
