@@ -15,6 +15,34 @@
     "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
     "portraits": [
       {
+        "fromYear": 1753,
+        "toYear": 1757,
+        "url": "01-thumbnail-1753.jpg",
+        "popoverUrl": "01-popover-1753.jpg",
+        "credit": "Charles Willson Peale, George Washington in the Uniform of a Colonial in the Virginia Militia, 1772. Oil on canvas, 50 3/8 x 41 in., Washington-Custis-Lee Collection, Washington and Lee University"
+      },
+      {
+        "fromYear": 1777,
+        "toYear": 1781,
+        "url": "01-thumbnail-1777.jpg",
+        "popoverUrl": "01-popover-1777.jpg",
+        "credit": "Charles Willson Peale, Portrait of George Washington, 1776. Oil on canvas, 44 x 38 5/16 in., The Brooklyn Museum"
+      },
+      {
+        "fromYear": 1871,
+        "toYear": 1785,
+        "url": "01-thumbnail-1781.jpg",
+        "popoverUrl": "01-popover-1781.jpg",
+        "credit": "Joseph Wright, The Powell Protrait of George Washington, 1784. Oil on canvas, 93 x 58 1/2 in., Pennsylvania Academy of the Fine Arts"
+      },
+      {
+        "fromYear": 1785,
+        "toYear": 1789,
+        "url": "01-thumbnail-1785.jpg",
+        "popoverUrl": "01-popover-1785.jpg",
+        "credit": "Robert Edge Pine, George Washington, 1785. Oil on canvas, 35 1/2 x 27 1/2 in., National Portrait Gallery"
+      },
+      {
         "fromYear": 1789,
         "toYear": 1793,
         "url": "01-thumbnail-1789.jpg",
