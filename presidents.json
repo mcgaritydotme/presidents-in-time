@@ -11,8 +11,8 @@
     "termEnd": 1797,
     "summary": "Commander of the Continental Army during the Revolutionary War and the first U.S. president, Washington established foundational precedents for the executive office and voluntarily relinquished power after two terms.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/George_Washington",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Washington&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "01-default.jpg",
+    "defaultPortraitCredit": "Emanuel Leutze, Washington Crossing the Delaware, 1851. Oil on canvas, 12 1/3 x 21 1/6 ft., Metropoliatan Museum of Art",
     "portraits": [
       {
         "fromYear": 1753,
@@ -55,6 +55,13 @@
         "url": "01-thumbnail-1793.jpg",
         "popoverUrl": "01-popover-1793.jpg",
         "credit": "Gilbert Stuart, George Washington (Lansdowne Portrait), 1796. Oil on canvas, 97 1/2 x 62 1/2 in., National Portrait Gallery"
+      },
+      {
+        "fromYear": 1797,
+        "toYear": 1799,
+        "url": "01-thumbnail-1797.jpg",
+        "popoverUrl": "01-popover-1797.jpg",
+        "credit": "Gilbert Stuart, George Washington (The Constable-Hamilton Portrait), 1797. Oil on canvas, 50 x 40 in., The Crystal Bridges Museum of American Art"
       }
     ]
   },
