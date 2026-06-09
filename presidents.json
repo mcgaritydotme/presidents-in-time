@@ -157,9 +157,23 @@
     "termEnd": 1809,
     "summary": "Principal author of the Declaration of Independence, Jefferson doubled the nation's size through the Louisiana Purchase and championed agrarian democracy and limited government.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_Jefferson",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Jefferson&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "03-default.jpg",
+    "defaultPortraitCredit": "John Trumbull, Declaration of Independence, 1818. Oil on canvas, 12 x 18 ft., United States Capitol Rotunda",
     "portraits": [
+      {
+        "fromYear": 1785,
+        "toYear": 1789,
+        "url": "03-thumbnail-1785.jpg",
+        "popoverUrl": "03-popover-1785.jpg",
+        "credit": "Mather Brown, Thomas Jefferson, 1786. Oil on canvas, 28 x 36 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1789,
+        "toYear": 1793,
+        "url": "03-thumbnail-1789.jpg",
+        "popoverUrl": "03-popover-1789.jpg",
+        "credit": "Charles Willson Peale, Thomas Jefferson, 1791. Oil on canvas, Independence National Historical Park, Philadelphia"
+      },
       {
         "fromYear": 1797,
         "toYear": 1801,
