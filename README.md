@@ -43,21 +43,30 @@ If no strong candidate exists for a block (e.g. the period predates any survivin
 
 ---
 
-### Step 3 — User selects a candidate
+### Step 3 — User selects a candidate; Claude downloads the file
 
 The user picks one candidate (or declines the period). Then:
 
-1. The user downloads or locates the highest-resolution version of the image available and saves it as:
+1. **Claude downloads the highest-resolution version of the image** available and saves it to:
 
    ```
    images/<id>-original-<fromYear>.<extension>
    ```
 
-   > **Example:** `images/02-original-1825.jpg`
+   > **Example:** `images/03-original-1825.jpg`
 
    `<id>` is the zero-padded two-digit integer ID from `presidents.json`. `<fromYear>` is the **start year of the four-year block**, not the year the portrait was created.
 
-2. Confirm the file exists before proceeding.
+   Use `curl` to download directly to the correct path:
+   ```bash
+   curl -L "<url>" -o "/Users/mcgaritydotme/Developer/presidents-in-time/images/<id>-original-<fromYear>.<ext>"
+   ```
+
+   If the source is a WordPress site or CDN, try the URL without any resize suffix (e.g. strip `-707x1024` from the filename) to get the full-resolution original.
+
+2. **Exception:** if the user says they have already saved the file themselves, skip the download and confirm the file exists with `ls -lh` before proceeding.
+
+3. Confirm the file downloaded correctly with `ls -lh`.
 
 ---
 
@@ -84,9 +93,9 @@ Do **not** use a remote URL (e.g. a Wikimedia link) for `defaultPortraitUrl` —
 
 ---
 
-### Step 4 — Write the JSON block
+### Step 4 — Write the JSON block and generate image files
 
-Add a portrait entry to the president's `portraits` array in `presidents.json`, in **ascending `fromYear` order**:
+Add a portrait entry to the president's `portraits` array in `presidents.json`. Entries **must always be in ascending `fromYear` order** — find the correct insertion point rather than appending to the end:
 
 ```json
 {
@@ -118,11 +127,13 @@ Artist Last Name, First Name, Title, Date. Medium, Dimensions (if known), Instit
 - Convert any metric (cm) dimensions to inches before writing: 1 in. = 2.54 cm
 - Use a plain lowercase `x` as the separator — never the `×` Unicode character
 
+After writing the JSON, immediately run `generate-popover-thumbnail.py` — do not wait for the user to ask.
+
 ---
 
-### Step 5 — Generate the popover image
+### Step 5 — Generate the popover and thumbnail (run automatically after Step 4)
 
-Run (or update) `generate-popover-thumbnail.py` to produce the popover and thumbnail files from the original.
+Run `generate-popover-thumbnail.py` to produce the popover and thumbnail files from the original. **This should be done automatically as part of every period — do not ask the user to trigger it.**
 
 **Popover rules:**
 1. Source: `<id>-original-<fromYear>.<ext>`
