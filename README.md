@@ -61,6 +61,29 @@ The user picks one candidate (or declines the period). Then:
 
 ---
 
+### Default portrait
+
+Each president also has a `defaultPortraitUrl` and `defaultPortraitCredit` at the top of their entry — this is a single "hero" image used outside the timeline grid (e.g. a famous group scene, a posthumous depiction, or simply the most iconic likeness).
+
+**The default portrait must always be saved as a local file**, following the same pattern as other images:
+
+```
+images/<id>-default.<extension>
+```
+
+> **Example:** `images/02-default.jpg`
+
+In `presidents.json`, set `defaultPortraitUrl` to just the filename (no path prefix):
+
+```json
+"defaultPortraitUrl": "02-default.jpg",
+"defaultPortraitCredit": "John Trumbull, Declaration of Independence, 1818. Oil on canvas, 12 x 18 ft., United States Capitol Rotunda"
+```
+
+Do **not** use a remote URL (e.g. a Wikimedia link) for `defaultPortraitUrl` — download the file locally first.
+
+---
+
 ### Step 4 — Write the JSON block
 
 Add a portrait entry to the president's `portraits` array in `presidents.json`, in **ascending `fromYear` order**:
