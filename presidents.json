@@ -161,6 +161,13 @@
     "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
     "portraits": [
       {
+        "fromYear": 1797,
+        "toYear": 1801,
+        "url": "03-thumbnail-1797.jpg",
+        "popoverUrl": "03-popover-1797.jpg",
+        "credit": "Charles Peale Polk, Thomas Jefferson, 1799. Oil on canvas, private collection"
+      },
+      {
         "fromYear": 1801,
         "toYear": 1805,
         "url": "03-thumbnail-1801.jpg",
@@ -173,6 +180,27 @@
         "url": "03-thumbnail-1805.jpeg",
         "popoverUrl": "03-popover-1805.jpeg",
         "credit": "Rembrandt Peale, Thomas Jefferson, 1805. Oil on linen, 28 x 23 1/2 in., Smithsonian American Art Museum / New-York Historical Society, Gift of Thomas Jefferson Bryan"
+      },
+      {
+        "fromYear": 1813,
+        "toYear": 1817,
+        "url": "03-thumbnail-1813.jpg",
+        "popoverUrl": "03-popover-1813.jpg",
+        "credit": "Matthew Harris Jouett, Thomas Jefferson, c. 1816. Oil on panel, White House Collection"
+      },
+      {
+        "fromYear": 1821,
+        "toYear": 1825,
+        "url": "03-thumbnail-1821.jpg",
+        "popoverUrl": "03-popover-1821.jpg",
+        "credit": "Thomas Sully, Thomas Jefferson, begun 1821, finished 1830. Oil on canvas, 37 1/2 x 32 1/2 in., American Philosophical Society, Philadelphia"
+      },
+      {
+        "fromYear": 1825,
+        "toYear": 1829,
+        "url": "03-thumbnail-1825.jpg",
+        "popoverUrl": "03-popover-1825.jpg",
+        "credit": "John Henri Isaac Browere, Thomas Jefferson, modeled 1825, cast 1940. Bronze, Fenimore Art Museum, Cooperstown, New York, Gift of Stephen C. Clark"
       }
     ]
   },
