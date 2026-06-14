@@ -78,7 +78,7 @@
     "summary": "A leading advocate for independence and the nation's first vice president, Adams steered the young republic through the Quasi-War with France while defending a strong central government.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Adams",
     "defaultPortraitUrl": "02-default.jpg",
-    "defaultPortraitCredit": "John Trumbull, Declaration of Independence, 1818. Oil on canvas, 12 ft × 18 ft, United States Capital Rotunda",
+    "defaultPortraitCredit": "John Trumbull, Declaration of Independence, 1818. Oil on canvas, 12 ft \u00d7 18 ft, United States Capital Rotunda",
     "portraits": [
       {
         "fromYear": 1765,
@@ -92,7 +92,7 @@
         "toYear": 1785,
         "url": "02-thumbnail-1781.jpg",
         "popoverUrl": "02-popover-1781.jpg",
-        "credit": "John Singleton Copley, John Adams, 1783. Oil on canvas, 93 7/10 × 58 in., Harvard Art Museums, Accession H74"
+        "credit": "John Singleton Copley, John Adams, 1783. Oil on canvas, 93 7/10 \u00d7 58 in., Harvard Art Museums, Accession H74"
       },
       {
         "fromYear": 1785,
@@ -230,9 +230,37 @@
     "termEnd": 1817,
     "summary": "Known as the 'Father of the Constitution' for drafting much of its framework, Madison led the nation through the War of 1812 against Great Britain.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/James_Madison",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Madison&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "04-default.jpg",
+    "defaultPortraitCredit": "Walker K. Hancock, James Madison (statue), 1974. Carrara & pink Tennessee marble, U.S. Capitol, Architect of the Capitol",
     "portraits": [
+      {
+        "fromYear": 1781,
+        "toYear": 1785,
+        "url": "04-thumbnail-1781.jpg",
+        "popoverUrl": "04-popover-1781.jpg",
+        "credit": "Charles Willson Peale, James Madison (portrait miniature), 1783. Watercolor on ivory in gold case, Library of Congress"
+      },
+      {
+        "fromYear": 1789,
+        "toYear": 1793,
+        "url": "04-thumbnail-1789.jpg",
+        "popoverUrl": "04-popover-1789.jpg",
+        "credit": "Charles Willson Peale, James Madison, 1792. Oil on canvas, 23 3/16 x 19 1/8 in., Gilcrease Museum"
+      },
+      {
+        "fromYear": 1801,
+        "toYear": 1805,
+        "url": "04-thumbnail-1801.jpg",
+        "popoverUrl": "04-popover-1801.jpg",
+        "credit": "Gilbert Stuart, James Madison, 1804. Oil on canvas, The Colonial Williamsburg Foundation"
+      },
+      {
+        "fromYear": 1805,
+        "toYear": 1809,
+        "url": "04-thumbnail-1805.jpg",
+        "popoverUrl": "04-popover-1805.jpg",
+        "credit": "Gilbert Stuart, James Madison, c. 1805-1807. Oil on canvas, 48 1/2 x 39 3/4 in., Bowdoin College Museum of Art"
+      },
       {
         "fromYear": 1809,
         "toYear": 1813,
@@ -246,6 +274,41 @@
         "url": "04-thumbnail-1813.jpg",
         "popoverUrl": "04-popover-1813.jpg",
         "credit": "John Vanderlyn, James Madison, 1816. Oil on canvas, 26 x 22 3/16 in., White House Collection / White House Historical Association"
+      },
+      {
+        "fromYear": 1817,
+        "toYear": 1821,
+        "url": "04-thumbnail-1817.jpg",
+        "popoverUrl": "04-popover-1817.jpg",
+        "credit": "Joseph Wood, James Madison, 1817. Oil on wood, 9 x 7 in., Virginia Historical Society"
+      },
+      {
+        "fromYear": 1821,
+        "toYear": 1825,
+        "url": "04-thumbnail-1821.jpg",
+        "popoverUrl": "04-popover-1821.jpg",
+        "credit": "Gilbert Stuart, James Madison, c. 1821. Oil on wood, 25 11/16 x 21 3/8 in., National Gallery of Art"
+      },
+      {
+        "fromYear": 1825,
+        "toYear": 1829,
+        "url": "04-thumbnail-1825.jpg",
+        "popoverUrl": "04-popover-1825.jpg",
+        "credit": "Charles Bird King(after Joseph Wood), James Madison, 1826. Oil on canvas, U.S. Department of State, Diplomatic Reception Rooms"
+      },
+      {
+        "fromYear": 1829,
+        "toYear": 1833,
+        "url": "04-thumbnail-1829.jpg",
+        "popoverUrl": "04-popover-1829.jpg",
+        "credit": "Chester Harding, James Madison, c. 1829-1830. Oil on canvas, 30 x 25 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1833,
+        "toYear": 1837,
+        "url": "04-thumbnail-1833.jpg",
+        "popoverUrl": "04-popover-1833.jpg",
+        "credit": "Asher B. Durand, James Madison, 1833. Oil on canvas, 24 1/4 x 20 1/4 in., New-York Historical Society"
       }
     ]
   },
