@@ -114,7 +114,7 @@ Add a portrait entry to the president's `portraits` array in `presidents.json`. 
 
 **Citation format:**
 ```
-Artist Last Name, First Name, Title, Date. Medium, Dimensions (if known), Institution, Collection/Gift info (if known)
+Artist First Name Last Name, Title, Date. Medium, Dimensions (if known), Institution, Collection/Gift info (if known)
 ```
 
 > **Example:** `Gilbert Stuart, John Adams, 1826. Oil on canvas, 30 x 25 in., Smithsonian American Art Museum`
@@ -185,5 +185,6 @@ python3 generate-popover-thumbnail.py
 |----|-----------|--------|
 | 1 | George Washington | ✅ Complete (7 portraits) |
 | 2 | John Adams | ✅ Complete (9 portraits, thumbnails need manual crop) |
-| 3 | Thomas Jefferson | 🔄 In progress (2 portraits) |
-| 4–47 | All others | ⏳ Single auto-generated placeholder each |
+| 3 | Thomas Jefferson | ✅ Complete (8 portraits, gaps 1793-1797 & 1809-1813, thumbnails need manual crop) |
+| 4 | James Madison | ✅ Complete (11 portraits, gap 1793-1801, thumbnails need manual crop) |
+| 5–47 | All others | ⏳ Single auto-generated placeholder each |
