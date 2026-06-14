@@ -324,9 +324,30 @@
     "termEnd": 1825,
     "summary": "Presiding over the 'Era of Good Feelings,' Monroe issued the Monroe Doctrine warning European powers against further colonization of the Americas.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/James_Monroe",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Monroe&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "05-default.jpg",
+    "defaultPortraitCredit": "Rembrandt Peale, James Monroe, c. 1824-1825. Oil on canvas, James Monroe Museum and Memorial Library",
     "portraits": [
+      {
+        "fromYear": 1773,
+        "toYear": 1777,
+        "url": "05-thumbnail-1773.jpg",
+        "popoverUrl": "05-popover-1773.jpg",
+        "credit": "Emanuel Leutze, Washington Crossing the Delaware (detail, depicting Monroe holding the flag), 1851. Oil on canvas, 149 x 255 in., Metropolitan Museum of Art"
+      },
+      {
+        "fromYear": 1793,
+        "toYear": 1797,
+        "url": "05-thumbnail-1793.jpg",
+        "popoverUrl": "05-popover-1793.jpg",
+        "credit": "Louis Sene, Miniature Portrait of James Monroe, c. 1795-1796. Hand-painted miniature, James Monroe Museum and Memorial Library"
+      },
+      {
+        "fromYear": 1813,
+        "toYear": 1817,
+        "url": "05-thumbnail-1813.jpg",
+        "popoverUrl": "05-popover-1813.jpg",
+        "credit": "John Vanderlyn, James Monroe, 1816. Oil on canvas, 26 1/2 x 22 1/2 in., National Portrait Gallery, Smithsonian Institution"
+      },
       {
         "fromYear": 1817,
         "toYear": 1821,
@@ -340,6 +361,20 @@
         "url": "05-thumbnail-1821.jpg",
         "popoverUrl": "05-popover-1821.jpg",
         "credit": "Gilbert Stuart, James Monroe, c. 1820-22. Oil on canvas, 40 1/4 x 32 in., The Metropoliatan Museum of Art"
+      },
+      {
+        "fromYear": 1825,
+        "toYear": 1829,
+        "url": "05-thumbnail-1825.jpg",
+        "popoverUrl": "05-popover-1825.jpg",
+        "credit": "Pendleton's Lithography (after Gilbert Stuart), James Monroe, c. 1828. Lithograph, 11 7/16 x 9 5/8 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1829,
+        "toYear": 1833,
+        "url": "05-thumbnail-1829.jpg",
+        "popoverUrl": "05-popover-1829.jpg",
+        "credit": "Thomas Sully, James Monroe, 1829. Oil on canvas mounted on board, 19 x 15 in., U.S. Department of State, Diplomatic Reception Rooms"
       }
     ]
   },
