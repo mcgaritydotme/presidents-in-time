@@ -484,22 +484,64 @@
     "termEnd": 1837,
     "summary": "A populist war hero who reshaped the presidency, Jackson dismantled the national bank and forcibly removed Native nations along the Trail of Tears.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Andrew_Jackson",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Jackson&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "07-default.jpg",
+    "defaultPortraitCredit": "Dennis Malone Carter, Battle of New Orleans, 1856. Oil on canvas, Historic New Orleans Collection",
     "portraits": [
+      {
+        "fromYear": 1813,
+        "toYear": 1817,
+        "url": "07-thumbnail-1813.jpg",
+        "popoverUrl": "07-popover-1813.jpg",
+        "credit": "Nathan W. Wheeler, Major General Andrew Jackson, ca. 1815-1818. Oil on canvas, Historic New Orleans Collection"
+      },
+      {
+        "fromYear": 1817,
+        "toYear": 1821,
+        "url": "07-thumbnail-1817.jpg",
+        "popoverUrl": "07-popover-1817.jpg",
+        "credit": "John Wesley Jarvis, General Andrew Jackson, ca. 1819. Oil on canvas, 48 1/2 x 36 in., Metropolitan Museum of Art"
+      },
+      {
+        "fromYear": 1821,
+        "toYear": 1825,
+        "url": "07-thumbnail-1821.jpg",
+        "popoverUrl": "07-popover-1821.jpg",
+        "credit": "Thomas Sully, Andrew Jackson, 1824. Oil on canvas, 23 1/4 x 19 1/2 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1825,
+        "toYear": 1829,
+        "url": "07-thumbnail-1825.jpg",
+        "popoverUrl": "07-popover-1825.jpg",
+        "credit": "Charles Cutler Torrey after Ralph Eleaser Whiteside Earl, Andrew Jackson, 1826. Engraving, 16 7/16 x 14 3/16 in., National Portrait Gallery, Smithsonian Institution"
+      },
       {
         "fromYear": 1829,
         "toYear": 1833,
         "url": "07-thumbnail-1829.jpg",
         "popoverUrl": "07-popover-1829.jpg",
-        "credit": "Thomas Sully, Andrew Jackson, 1824. Oil on canvas, 23 1/4 x 19 1/2 in., National Portrait Gallery, Smithsonian Institution"
+        "credit": "Albert Newsam after William James Hubard, Andrew Jackson, President of the United States, 1830. Lithograph, National Portrait Gallery, Smithsonian Institution"
       },
       {
         "fromYear": 1833,
         "toYear": 1837,
         "url": "07-thumbnail-1833.jpg",
         "popoverUrl": "07-popover-1833.jpg",
-        "credit": "Ralph Eleaser Whiteside Earl, Andrew Jackson, 1835. Oil on canvas, 30 x 25 in., White House Collection / White House Historical Association"
+        "credit": "Ralph Eleaser Whiteside Earl, Andrew Jackson, c. 1835. Oil on canvas, 30 x 25 in., White House Collection"
+      },
+      {
+        "fromYear": 1837,
+        "toYear": 1841,
+        "url": "07-thumbnail-1837.jpg",
+        "popoverUrl": "07-popover-1837.jpg",
+        "credit": "Miner Kilbourne Kellogg, Andrew Jackson, ca. 1840. Oil on canvas, 29 7/8 x 24 7/8 in., Smithsonian American Art Museum"
+      },
+      {
+        "fromYear": 1841,
+        "toYear": 1845,
+        "url": "07-thumbnail-1841.jpg",
+        "popoverUrl": "07-popover-1841.jpg",
+        "credit": "Dan Adams, Andrew Jackson, April 1845. Daguerreotype, The Hermitage, Nashville, Tennessee"
       }
     ]
   },
