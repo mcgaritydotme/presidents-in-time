@@ -390,15 +390,85 @@
     "termEnd": 1829,
     "summary": "A brilliant diplomat and son of John Adams, he promoted national infrastructure and later became a fierce anti-slavery voice in the House of Representatives.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Quincy_Adams",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Adams&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "06-default.jpg",
+    "defaultPortraitCredit": "George Caleb Bingham, John Quincy Adams, 1844. Oil on canvas, National Portrait Gallery, Smithsonian Institution",
     "portraits": [
+      {
+        "fromYear": 1781,
+        "toYear": 1785,
+        "url": "06-thumbnail-1781.jpg",
+        "popoverUrl": "06-popover-1781.jpg",
+        "credit": "Izaak Schmidt, John Quincy Adams, 1783. Pastel on vellum, 10 1/4 x 7 3/4 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1793,
+        "toYear": 1797,
+        "url": "06-thumbnail-1793.jpg",
+        "popoverUrl": "06-popover-1793.jpg",
+        "credit": "John Singleton Copley, John Quincy Adams, 1796. Oil on canvas, 30 1/8 x 25 in., Museum of Fine Arts, Boston"
+      },
+      {
+        "fromYear": 1813,
+        "toYear": 1817,
+        "url": "06-thumbnail-1813.jpg",
+        "popoverUrl": "06-popover-1813.jpg",
+        "credit": "Amedee Forestier, The Signing of the Treaty of Ghent, Christmas Eve, 1814 (detail, depicting Adams as chief U.S. negotiator), 1914. Oil on canvas, 28 1/8 x 40 1/8 in., Smithsonian American Art Museum"
+      },
+      {
+        "fromYear": 1817,
+        "toYear": 1821,
+        "url": "06-thumbnail-1817.jpg",
+        "popoverUrl": "06-popover-1817.jpg",
+        "credit": "Gilbert Stuart, John Quincy Adams, 1818. Oil on panel, 26 3/4 x 22 in., White House Collection"
+      },
+      {
+        "fromYear": 1821,
+        "toYear": 1825,
+        "url": "06-thumbnail-1821.jpg",
+        "popoverUrl": "06-popover-1821.jpg",
+        "credit": "Thomas Sully, John Quincy Adams, 1824. Oil on canvas, 24 x 20 1/16 in., National Gallery of Art, Andrew W. Mellon Collection"
+      },
       {
         "fromYear": 1825,
         "toYear": 1829,
         "url": "06-thumbnail-1825.jpg",
         "popoverUrl": "06-popover-1825.jpg",
-        "credit": "Gilbert Stuart & Thomas Sully, John Quincy Adams, 1825-1830. Oil on canvas, 95 x 59 3/4 in., Harvard University Portrait Collection, Bequest of Ward Nicholas Boylston to Harvard College, 1828"
+        "credit": "Charles Bird King, John Quincy Adams, 1826. Oil on wood, 23 7/8 x 19 1/2 in., U.S. Department of State"
+      },
+      {
+        "fromYear": 1829,
+        "toYear": 1833,
+        "url": "06-thumbnail-1829.jpg",
+        "popoverUrl": "06-popover-1829.jpg",
+        "credit": "Gilbert Stuart and Thomas Sully, John Quincy Adams, 1825-1830. Oil on canvas, Harvard University Portrait Collection"
+      },
+      {
+        "fromYear": 1833,
+        "toYear": 1837,
+        "url": "06-thumbnail-1833.jpg",
+        "popoverUrl": "06-popover-1833.jpg",
+        "credit": "Asher Brown Durand, John Quincy Adams, 1835. Oil on canvas, Harvard Art Museums"
+      },
+      {
+        "fromYear": 1837,
+        "toYear": 1841,
+        "url": "06-thumbnail-1837.jpg",
+        "popoverUrl": "06-popover-1837.jpg",
+        "credit": "Hiram Powers, John Quincy Adams, modeled 1837. Plaster, 22 3/4 x 14 3/4 x 10 3/8 in., Smithsonian American Art Museum"
+      },
+      {
+        "fromYear": 1841,
+        "toYear": 1845,
+        "url": "06-thumbnail-1841.jpg",
+        "popoverUrl": "06-popover-1841.jpg",
+        "credit": "Philip Haas, John Quincy Adams, 1843. Daguerreotype (Southworth and Hawes copy of lost original, c. 1850), National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1845,
+        "toYear": 1849,
+        "url": "06-thumbnail-1845.jpg",
+        "popoverUrl": "06-popover-1845.jpg",
+        "credit": "Mathew Brady, John Quincy Adams, c. 1843-1848. Daguerreotype, U.S. National Archives and Records Administration"
       }
     ]
   },
