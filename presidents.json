@@ -541,6 +541,13 @@
         "toYear": 1845,
         "url": "07-thumbnail-1841.jpg",
         "popoverUrl": "07-popover-1841.jpg",
+        "credit": "Edward Anthony, Andrew Jackson, 1844-45. Daguerreotype"
+      },
+      {
+        "fromYear": 1845,
+        "toYear": 1849,
+        "url": "07-thumbnail-1845.jpg",
+        "popoverUrl": "07-popover-1845.jpg",
         "credit": "Dan Adams, Andrew Jackson, April 1845. Daguerreotype, The Hermitage, Nashville, Tennessee"
       }
     ]
