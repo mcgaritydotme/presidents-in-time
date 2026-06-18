@@ -28,14 +28,17 @@ Start from the block that contains the president's **year of death** and work ba
 
 ### Step 2 — Research portraits for the current block
 
-For each four-year block, research and present **one to three** of the most famous or historically significant representations of the president created during that period. Candidates may include:
+For each four-year block, research and present **one to three** of the most famous or historically significant representations of the president created during that period. All artwork types are equally valid candidates, including:
 
 - Oil or watercolor paintings
 - Pastel drawings
-- Engravings or illustrated prints
+- Engravings, lithographs, or illustrated prints
 - Sculptures or medallions
+- Daguerreotypes or photographs
+- Miniatures
 - Group paintings (e.g. the Declaration of Independence scene) if the president is prominently depicted
-- Photography (for presidents from the mid-19th century onward)
+
+The only criteria are that the work is a quality representation of the president and is dated as close as possible to the block's year range. Do not default to paintings — a period-accurate engraving beats an off-period painting.
 
 Always provide either a **direct link** or the **actual image** for each candidate so the user can evaluate them visually. Do not present a candidate without a viewable image or URL.
 
@@ -73,6 +76,8 @@ The user picks one candidate (or declines the period). Then:
 ### Default portrait
 
 Each president also has a `defaultPortraitUrl` and `defaultPortraitCredit` at the top of their entry — this is a single "hero" image used outside the timeline grid (e.g. a famous group scene, a posthumous depiction, or simply the most iconic likeness).
+
+The default portrait should be the **most famous or iconic depiction** of the president that has **not already been used** in a block portrait entry. Research it the same way as block portraits — present 1–3 candidates and wait for user selection before downloading.
 
 **The default portrait must always be saved as a local file**, following the same pattern as other images:
 
