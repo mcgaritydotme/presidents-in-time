@@ -264,6 +264,62 @@
     font-family: var(--sans); font-size: 10.5px; color: var(--muted);
     margin-top: 12px; line-height: 1.4;
   }
+  /* sheet-only chrome — hidden on desktop */
+  #po-scrim { display: none; }
+  .po-handle, .po-close { display: none; }
+
+  /* ---- mobile / touch: popover becomes a bottom sheet ---- */
+  @media (hover: none), (max-width: 640px) {
+    #po-scrim {
+      display: block; position: fixed; inset: 0;
+      background: rgba(30,27,21,0.42);
+      opacity: 0; visibility: hidden;
+      transition: opacity 0.2s ease, visibility 0.2s;
+      z-index: 89;
+    }
+    #po-scrim.visible { opacity: 1; visibility: visible; }
+
+    #popover {
+      left: 0; right: 0; bottom: 0; top: auto; width: auto;
+      max-height: 88vh; border-radius: 18px 18px 0 0;
+      transform: translateY(100%);
+      transition: transform 0.28s cubic-bezier(.32,.72,0,1), opacity 0.2s ease, visibility 0.2s;
+      display: flex; flex-direction: column;
+      box-shadow: 0 -12px 44px -14px rgba(40,36,28,0.5);
+    }
+    #popover.visible { transform: translateY(0); }
+
+    /* let portrait + body become direct flex children of the sheet */
+    #po-content { display: contents; }
+
+    /* fixed-size portrait — predictable, never eats the screen */
+    #popover .po-portrait {
+      flex: 0 0 auto; aspect-ratio: auto; height: 40vh;
+    }
+    #popover .po-portrait img { object-position: top center; }
+
+    /* variable-length text is the ONLY scroll region */
+    #popover .po-body {
+      flex: 1 1 auto; overflow-y: auto; -webkit-overflow-scrolling: touch;
+      padding: 18px 20px calc(20px + env(safe-area-inset-bottom));
+    }
+
+    .po-handle {
+      display: block; position: absolute; top: 9px; left: 50%;
+      transform: translateX(-50%);
+      width: 42px; height: 5px; border-radius: 3px;
+      background: rgba(255,255,255,0.75);
+      z-index: 3; pointer-events: none;
+    }
+    .po-close {
+      display: flex; align-items: center; justify-content: center;
+      position: absolute; top: 10px; right: 10px; z-index: 3;
+      width: 34px; height: 34px; border: none; border-radius: 50%;
+      background: rgba(20,18,14,0.5); color: #fff;
+      font-size: 16px; line-height: 1; cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
 
   .load-error {
     font-family: var(--sans); color: var(--ink-soft); padding: 80px 28px;
@@ -307,8 +363,13 @@
     <div id="grid"></div>
   </div>
 
-  <!-- ===== hover popover (single reused node) ===== -->
-  <div id="popover"></div>
+  <!-- ===== hover popover / mobile sheet (single reused node) ===== -->
+  <div id="po-scrim"></div>
+  <div id="popover">
+    <button class="po-close" aria-label="Close">✕</button>
+    <div class="po-handle"></div>
+    <div id="po-content"></div>
+  </div>
 
   <script src="app.js"></script>
 </body>

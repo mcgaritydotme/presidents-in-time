@@ -22,6 +22,9 @@
     scroll: document.getElementById('grid-scroll'),
     grid: document.getElementById('grid'),
     popover: document.getElementById('popover'),
+    poContent: document.getElementById('po-content'),
+    poClose: document.querySelector('#popover .po-close'),
+    scrim: document.getElementById('po-scrim'),
     filterBtn: document.getElementById('filter-btn'),
     filterCount: document.getElementById('filter-count'),
     filterPanel: document.getElementById('filter-panel'),
@@ -223,14 +226,21 @@
     if (isInTerm) cell.classList.add('in-term');
 
     // hover popover — shows the portrait paired with THIS cell's period.
-    // Bias the popover to the side the cursor ENTERED from (midpoint split), so
-    // sweeping across a row leaves the path ahead unobstructed.
+    // Desktop: hover, biased to the side the cursor ENTERED from (midpoint split),
+    // so sweeping across a row leaves the path ahead unobstructed.
+    // Touch / small screens: the popover is a bottom sheet, opened by tap (toggle).
     cell.addEventListener('mouseenter', (e) => {
+      if (isSheet()) return;
       const r = cell.getBoundingClientRect();
       const side = (e.clientX < r.left + r.width / 2) ? 'left' : 'right';
       showPopover(p, cell, y, side);
     });
-    cell.addEventListener('mouseleave', hidePopover);
+    cell.addEventListener('mouseleave', () => { if (!isSheet()) hidePopover(); });
+    cell.addEventListener('click', () => {
+      if (!isSheet()) return;
+      if (currentCell === cell && els.popover.classList.contains('visible')) closeSheet();
+      else showPopover(p, cell, y, 'right');
+    });
 
     return cell;
   }
@@ -260,6 +270,19 @@
 
   let popoverTimer = null;
 
+  // Sheet mode = touch devices / narrow viewports. CSS turns #popover into a
+  // bottom sheet; here we just need to know which interaction model to use.
+  const sheetMQ = window.matchMedia('(hover: none), (max-width: 640px)');
+  function isSheet() { return sheetMQ.matches; }
+  let currentCell = null;
+
+  function closeSheet() {
+    els.popover.classList.remove('visible');
+    els.scrim.classList.remove('visible');
+    els.popover.style.transform = '';
+    currentCell = null;
+  }
+
   function showPopover(p, cell, y, preferredSide) {
     clearTimeout(popoverTimer);
     const po = els.popover;
@@ -287,7 +310,7 @@
     const creditHtml = creditText
       ? '<div class="po-credit">' + creditText + '</div>'
       : '';
-    po.innerHTML =
+    els.poContent.innerHTML =
       '<div class="po-portrait"><img src="' + portraitSrc + '" alt="' + p.fullName + '"></div>' +
       '<div class="po-body">' +
         '<div class="po-term">#' + p.id + '</div>' +
@@ -298,10 +321,16 @@
         creditHtml +
       '</div>';
     po.classList.add('visible');
-    positionPopover(cell, preferredSide);
+    currentCell = cell;
+    if (isSheet()) {
+      els.scrim.classList.add('visible');
+    } else {
+      positionPopover(cell, preferredSide);
+    }
   }
 
   function positionPopover(cell, preferredSide) {
+    if (isSheet()) return;   // sheet mode: CSS owns the position
     const po = els.popover;
     const r = cell.getBoundingClientRect();
     const pw = po.offsetWidth, ph = po.offsetHeight;
@@ -338,6 +367,37 @@
   // keep open while hovering the popover itself
   els.popover.addEventListener('mouseenter', () => clearTimeout(popoverTimer));
   els.popover.addEventListener('mouseleave', () => els.popover.classList.remove('visible'));
+
+  // ---- sheet dismissal (touch) ----
+  els.scrim.addEventListener('click', closeSheet);
+  els.poClose.addEventListener('click', (e) => { e.stopPropagation(); closeSheet(); });
+
+  // swipe the sheet down to dismiss; only when the text isn't scrolled, so a
+  // downward drag from the top reads as "close" rather than fighting the scroll.
+  let dragStartY = null, dragging = false;
+  els.popover.addEventListener('touchstart', (e) => {
+    if (!isSheet()) return;
+    const body = e.target.closest('.po-body');
+    if (body && body.scrollTop > 0) return;
+    dragStartY = e.touches[0].clientY; dragging = true;
+    els.popover.style.transition = 'none';
+  }, { passive: true });
+  els.popover.addEventListener('touchmove', (e) => {
+    if (!dragging) return;
+    const dy = e.touches[0].clientY - dragStartY;
+    if (dy > 0) { els.popover.style.transform = 'translateY(' + dy + 'px)'; e.preventDefault(); }
+  }, { passive: false });
+  els.popover.addEventListener('touchend', (e) => {
+    if (!dragging) return;
+    dragging = false;
+    els.popover.style.transition = '';
+    const dy = e.changedTouches[0].clientY - dragStartY;
+    els.popover.style.transform = '';
+    if (dy > 80) closeSheet();
+  }, { passive: true });
+
+  // if the viewport crosses the desktop/sheet boundary, clear any open sheet state
+  sheetMQ.addEventListener('change', closeSheet);
 
   /* ---------- year permalinks ---------- */
 
