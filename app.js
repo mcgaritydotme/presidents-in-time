@@ -222,8 +222,14 @@
 
     if (isInTerm) cell.classList.add('in-term');
 
-    // hover popover — shows the portrait paired with THIS cell's period
-    cell.addEventListener('mouseenter', () => showPopover(p, cell, y));
+    // hover popover — shows the portrait paired with THIS cell's period.
+    // Bias the popover to the side the cursor ENTERED from (midpoint split), so
+    // sweeping across a row leaves the path ahead unobstructed.
+    cell.addEventListener('mouseenter', (e) => {
+      const r = cell.getBoundingClientRect();
+      const side = (e.clientX < r.left + r.width / 2) ? 'left' : 'right';
+      showPopover(p, cell, y, side);
+    });
     cell.addEventListener('mouseleave', hidePopover);
 
     return cell;
@@ -254,7 +260,7 @@
 
   let popoverTimer = null;
 
-  function showPopover(p, cell, y) {
+  function showPopover(p, cell, y, preferredSide) {
     clearTimeout(popoverTimer);
     const po = els.popover;
     const inOffice = p.termStart + '–' + p.termEnd;
@@ -292,19 +298,30 @@
         creditHtml +
       '</div>';
     po.classList.add('visible');
-    positionPopover(cell);
+    positionPopover(cell, preferredSide);
   }
 
-  function positionPopover(cell) {
+  function positionPopover(cell, preferredSide) {
     const po = els.popover;
     const r = cell.getBoundingClientRect();
     const pw = po.offsetWidth, ph = po.offsetHeight;
     const margin = 12, vw = window.innerWidth, vh = window.innerHeight;
 
-    // prefer right of cell; flip to left if it would clip
-    let left = r.right + margin;
-    if (left + pw > vw - margin) left = r.left - margin - pw;
-    if (left < margin) left = Math.min(Math.max(margin, r.left), vw - pw - margin);
+    // Candidate x for each side, and whether it fits cleanly in the viewport.
+    const rightX = r.right + margin;
+    const leftX = r.left - margin - pw;
+    const rightFits = rightX + pw <= vw - margin;
+    const leftFits = leftX >= margin;
+
+    // Honour the side the cursor entered from; flip to the other side only if the
+    // preferred side would clip. If neither fits (narrow viewport), clamp.
+    let left;
+    const wantLeft = preferredSide === 'left';
+    if (wantLeft && leftFits) left = leftX;
+    else if (!wantLeft && rightFits) left = rightX;
+    else if (wantLeft && rightFits) left = rightX;   // preferred left clipped → go right
+    else if (!wantLeft && leftFits) left = leftX;    // preferred right clipped → go left
+    else left = Math.min(Math.max(margin, r.left), vw - pw - margin); // clamp
 
     // vertically center on cell, clamp to viewport
     let top = r.top + r.height / 2 - ph / 2;
