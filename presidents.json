@@ -564,15 +564,78 @@
     "termEnd": 1841,
     "summary": "A master political organizer who helped found the Democratic Party, Van Buren's single term was consumed by the financial Panic of 1837.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Martin_Van_Buren",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Van%20Buren&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "08-default.jpg",
+    "defaultPortraitCredit": "Ferdinand Pettrich, Martin Van Buren, ca. 1837-38. Plaster, 26 1/2 x 17 3/8 x 10 1/4 in., Smithsonian American Art Museum",
     "portraits": [
+      {
+        "fromYear": 1841,
+        "toYear": 1845,
+        "url": "08-thumbnail-1841.jpg",
+        "popoverUrl": "08-popover-1841.jpg",
+        "credit": "D. Dickinson, M. Van Buren, 1844. Lithograph, chine colle, sheet 18 5/16 x 13 9/16 in., Library of Congress"
+      },
+      {
+        "fromYear": 1845,
+        "toYear": 1849,
+        "url": "08-thumbnail-1845.jpg",
+        "popoverUrl": "08-popover-1845.jpg",
+        "credit": "N. Currier (after a daguerreotype by John Plumbe), Martin Van Buren, detail from Grand Democratic Free Soil Banner, 1848. Lithograph, Library of Congress"
+      },
+      {
+        "fromYear": 1849,
+        "toYear": 1853,
+        "url": "08-thumbnail-1849.jpg",
+        "popoverUrl": "08-popover-1849.jpg",
+        "credit": "Mathew Brady, Martin Van Buren, 1849-1850. Daguerreotype, Beinecke Rare Book &amp; Manuscript Library, Yale University"
+      },
+      {
+        "fromYear": 1853,
+        "toYear": 1857,
+        "url": "08-thumbnail-1853.jpg",
+        "popoverUrl": "08-popover-1853.jpg",
+        "credit": "Mathew B. Brady, President Martin Van Buren, 1855-58. Salted paper print from glass negative, 19 x 15 5/8 in., Metropolitan Museum of Art"
+      },
+      {
+        "fromYear": 1857,
+        "toYear": 1861,
+        "url": "08-thumbnail-1857.jpg",
+        "popoverUrl": "08-popover-1857.jpg",
+        "credit": "George Peter Alexander Healy, Martin Van Buren, 1858. Oil on canvas, 62 1/2 x 47 3/8 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "08-thumbnail-1861.jpg",
+        "popoverUrl": "08-popover-1861.jpg",
+        "credit": "After Mathew Brady, The Late Martin Van Buren, Ex-President of the United States, Harper's Weekly, August 9, 1862. Wood engraving"
+      },
+      {
+        "fromYear": 1825,
+        "toYear": 1829,
+        "url": "08-thumbnail-1825.jpg",
+        "popoverUrl": "08-popover-1825.jpg",
+        "credit": "Ezra Ames, Governor Martin Van Buren, c. 1828-1829. Oil on canvas, 52 3/4 x 41 in., Albany Institute of History and Art"
+      },
+      {
+        "fromYear": 1829,
+        "toYear": 1833,
+        "url": "08-thumbnail-1829.jpg",
+        "popoverUrl": "08-popover-1829.jpg",
+        "credit": "Francis Alexander, Martin Van Buren, c. 1830. Oil on panel, 24 1/16 x 30 1/16 in., White House Collection"
+      },
+      {
+        "fromYear": 1833,
+        "toYear": 1837,
+        "url": "08-thumbnail-1833.jpg",
+        "popoverUrl": "08-popover-1833.jpg",
+        "credit": "Daniel Wright Kellogg after Henry Inman, Martin Van Buren, c. 1836-40. Hand-colored lithograph on paper, 11 11/16 x 9 5/16 in., National Portrait Gallery, Smithsonian Institution"
+      },
       {
         "fromYear": 1837,
         "toYear": 1841,
         "url": "08-thumbnail-1837.jpg",
         "popoverUrl": "08-popover-1837.jpg",
-        "credit": "TBD"
+        "credit": "Henry Inman, Martin Van Buren, ca. 1837-38. Oil on canvas, 30 3/4 x 25 1/2 in., Metropolitan Museum of Art"
       }
     ]
   },
