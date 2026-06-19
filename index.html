@@ -292,11 +292,12 @@
     /* let portrait + body become direct flex children of the sheet */
     #po-content { display: contents; }
 
-    /* fixed-size portrait — predictable, never eats the screen */
+    /* native 3:4 portrait — matches the framing the images were authored for,
+       so nothing is ever cropped (no per-portrait "peek-a-boo"). The name and
+       bio start still land below it; the bio scrolls. */
     #popover .po-portrait {
-      flex: 0 0 auto; aspect-ratio: auto; height: 40vh;
+      flex: 0 0 auto; aspect-ratio: 3 / 4; height: auto;
     }
-    #popover .po-portrait img { object-position: top center; }
 
     /* variable-length text is the ONLY scroll region */
     #popover .po-body {
