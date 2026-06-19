@@ -346,6 +346,19 @@
     }
   }
 
+  /* ---- tablet (e.g. iPad mini): keep the bottom-sheet behavior but cap its
+     width and center it. A full-width 3:4 portrait on a ~768px-wide tablet is
+     over 1000px tall, swallowing the whole sheet and shoving the text
+     off-screen. Capping the width keeps the portrait modest so the bio shows.
+     Horizontal centering uses auto margins (not a transform) so the existing
+     translateY drag-to-dismiss logic keeps working. ---- */
+  @media (hover: none) and (min-width: 641px) {
+    #popover {
+      left: 0; right: 0; margin-inline: auto;
+      width: min(400px, 88vw); max-height: 86vh;
+    }
+  }
+
   .load-error {
     font-family: var(--sans); color: var(--ink-soft); padding: 80px 28px;
     text-align: center; font-size: 16px;
