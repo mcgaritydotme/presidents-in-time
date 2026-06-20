@@ -711,15 +711,57 @@
     "termEnd": 1845,
     "summary": "The first vice president elevated by a president's death, Tyler set the precedent for full succession and oversaw the annexation of Texas.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Tyler",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Tyler&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "10-default.jpg",
+    "defaultPortraitCredit": "Charles Fenderich, John Tyler, 1841. Lithograph &quot;from life,&quot; image 12 1/2 x 11 1/8 in., sheet 16 9/16 x 13 3/8 in., Library of Congress",
     "portraits": [
+      {
+        "fromYear": 1825,
+        "toYear": 1829,
+        "url": "10-thumbnail-1825.jpg",
+        "popoverUrl": "10-popover-1825.jpg",
+        "credit": "Unidentified artist, John Tyler as Governor of Virginia, c. 1826. Engraving"
+      },
+      {
+        "fromYear": 1833,
+        "toYear": 1837,
+        "url": "10-thumbnail-1833.jpg",
+        "popoverUrl": "10-popover-1833.jpg",
+        "credit": "Attributed to Anna Claypoole Peale, John Tyler, 1835. Watercolor on ivory, Library of Congress"
+      },
+      {
+        "fromYear": 1837,
+        "toYear": 1841,
+        "url": "10-thumbnail-1837.jpg",
+        "popoverUrl": "10-popover-1837.jpg",
+        "credit": "Attributed to J.T. Bowen, John Tyler, c. 1840. Lithograph, Library of Congress"
+      },
       {
         "fromYear": 1841,
         "toYear": 1845,
         "url": "10-thumbnail-1841.jpg",
         "popoverUrl": "10-popover-1841.jpg",
-        "credit": "TBD"
+        "credit": "James Reid Lambdin, John Tyler, 1841. Oil on canvas, 30 x 25 in., White House Collection, White House Historical Association"
+      },
+      {
+        "fromYear": 1845,
+        "toYear": 1849,
+        "url": "10-thumbnail-1845.jpg",
+        "popoverUrl": "10-popover-1845.jpg",
+        "credit": "Edwards &amp; Anthony, John Tyler, c. 1845. Daguerreotype, Library of Congress"
+      },
+      {
+        "fromYear": 1857,
+        "toYear": 1861,
+        "url": "10-thumbnail-1857.jpg",
+        "popoverUrl": "10-popover-1857.jpg",
+        "credit": "George Peter Alexander Healy, John Tyler, 1859. Oil on canvas, 36 1/8 x 29 1/8 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "10-thumbnail-1861.jpg",
+        "popoverUrl": "10-popover-1861.jpg",
+        "credit": "Steel engraving after a painting by Alonzo Chappel, John Tyler, 1863. Johnson, Fry &amp; Co., Library of Congress"
       }
     ]
   },
