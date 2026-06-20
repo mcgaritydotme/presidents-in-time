@@ -11,6 +11,7 @@
       "Bash(curl -s \"https://commons.wikimedia.org/w/api.php*)",
       "Bash(curl -s \"https://ohiomemory.org/digital/bl/dmwebservices/*)",
       "Bash(curl -s \"https://collectionapi.metmuseum.org/*)",
+      "Bash(curl -sL \"https://web.archive.org/*)",
       "WebFetch(domain:americanart.si.edu)",
       "WebFetch(domain:americaspresidents.si.edu)",
       "WebFetch(domain:amphilsoc.pastperfectonline.com)",

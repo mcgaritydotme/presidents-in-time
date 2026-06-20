@@ -227,5 +227,7 @@ The per-block workflow above (research → present → pick → finalize, repeat
 | 7 | Andrew Jackson | ✅ Complete (9 portraits) |
 | 8 | Martin Van Buren | ✅ Complete (10 portraits) |
 | 9 | William Henry Harrison | ✅ Complete (6 portraits, gaps 1773-1797, 1801-1813 & 1821-1833) |
-| 10–47 | All others | ⏳ Single auto-generated placeholder each |
+| 10 | John Tyler | ✅ Complete (7 portraits) |
+| 11 | James K. Polk | ✅ Complete (3 portraits, gaps 1793-1837) |
+| 12–47 | All others | ⏳ Single auto-generated placeholder each |
 
