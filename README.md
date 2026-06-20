@@ -218,3 +218,4 @@ The per-block workflow above (research → present → pick → finalize, repeat
 | 3 | Thomas Jefferson | ✅ Complete (8 portraits, gaps 1793-1797 & 1809-1813, thumbnails need manual crop) |
 | 4 | James Madison | ✅ Complete (11 portraits, gap 1793-1801, thumbnails need manual crop) |
 | 5–47 | All others | ⏳ Single auto-generated placeholder each |
+
