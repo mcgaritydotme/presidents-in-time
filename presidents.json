@@ -652,15 +652,50 @@
     "diedInOffice": true,
     "summary": "A military hero of Tippecanoe, Harrison died of illness just 31 days into office, the shortest presidency in American history.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/William_Henry_Harrison",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Harrison&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "09-default.jpg",
+    "defaultPortraitCredit": "Bass Otis, William Henry Harrison, 1841. Oil on canvas, 30 x 25 in., private collection (sold Christie's)",
     "portraits": [
       {
-        "fromYear": 1841,
+        "fromYear": 1797,
+        "toYear": 1801,
+        "url": "09-thumbnail-1797.jpg",
+        "popoverUrl": "09-popover-1797.jpg",
+        "credit": "Charles B.J.F. de Saint-Mémin, William Henry Harrison, 1800. Engraving, image 2 1/4 in. diam., sheet 4 3/4 x 4 in., Library of Congress"
+      },
+      {
+        "fromYear": 1813,
+        "toYear": 1817,
+        "url": "09-thumbnail-1813.jpg",
+        "popoverUrl": "09-popover-1813.jpg",
+        "credit": "Rembrandt Peale, William Henry Harrison, c. 1813. Oil on canvas, 28 1/2 x 23 3/4 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1817,
+        "toYear": 1821,
+        "url": "09-thumbnail-1817.jpg",
+        "popoverUrl": "09-popover-1817.jpg",
+        "credit": "Unidentified artist, William Henry Harrison, full-length portrait, standing, in uniform, holding hat, c. 1820. Engraving, Library of Congress"
+      },
+      {
+        "fromYear": 1833,
+        "toYear": 1837,
+        "url": "09-thumbnail-1833.jpg",
+        "popoverUrl": "09-popover-1833.jpg",
+        "credit": "James Reid Lambdin, William Henry Harrison, 1835. Oil on canvas, 30 x 25 in., White House Collection, White House Historical Association"
+      },
+      {
+        "fromYear": 1837,
         "toYear": 1841,
+        "url": "09-thumbnail-1837.jpg",
+        "popoverUrl": "09-popover-1837.jpg",
+        "credit": "Albert Gallatin Hoit, William Henry Harrison, 1840. Oil on canvas, 30 x 25 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1841,
+        "toYear": 1845,
         "url": "09-thumbnail-1841.jpg",
         "popoverUrl": "09-popover-1841.jpg",
-        "credit": "TBD"
+        "credit": "John Sartain and William E. Tucker, William Henry Harrison, 1841. Mezzotint after Thomas Sully, image 22 3/4 x 15 in., sheet 25 9/16 x 18 1/2 in., National Portrait Gallery, Smithsonian Institution"
       }
     ]
   },
@@ -1013,7 +1048,7 @@
     "deathYear": 1908,
     "termStart": 1893,
     "termEnd": 1897,
-    "summary": "Returning to office as the only president to serve non-consecutive terms, Cleveland confronted the severe economic depression of the Panic of 1893.",
+    "summary": "Returning to office as the first president to serve non-consecutive terms, Cleveland confronted the severe economic depression of the Panic of 1893.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Grover_Cleveland",
     "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Cleveland&font=playfair-display",
     "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
