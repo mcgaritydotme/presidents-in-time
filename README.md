@@ -182,6 +182,10 @@ The per-block workflow above (research → present → pick → finalize, repeat
 
 **Phase 5 — Finalization.** Download, generate popovers/thumbnails, and update `presidents.json` for every selection in one batch, rather than one block at a time.
 
+**Phase 6 — Default portrait.** Immediately after Phase 5, without waiting to be asked: research the default-portrait pool (leftover candidates from Phase 1 plus a dedicated posthumous/retrospective search — see Default Portrait section above) and present it for a pick. The run isn't done until this is resolved.
+
+**Phase 7 — Citation lint.** After the default portrait is picked and saved, re-verify every entry just written — all block portraits plus the default — against each one's primary source record before declaring the run complete: artist attribution matches the institution's own record (including any "unverified"/"attributed to" caveats the source itself flags, don't smooth those over), dimensions are present and in inches, and the named institution matches the actual current holding record rather than an inferred one. Fix anything that fails before reporting the run done.
+
 **Placeholder pool.** Candidates collected but not chosen for their own block remain available afterward for any gap blocks (no surviving likeness for that exact span) — pick the most famous **unused** one by eye, same as the existing Default Portrait rule, then run it through the same finalization step.
 
 **Trusted domains** live in `.claude/settings.json`, seeded from sources already proven across earlier presidents. The list grows each time a new domain is approved during a batch run.
@@ -206,6 +210,7 @@ The per-block workflow above (research → present → pick → finalize, repeat
 - **`id` fields in `presidents.json` are integers**, not zero-padded strings. File names use zero-padded two-digit IDs (e.g. `02-`) but JSON IDs are plain integers (e.g. `2`).
 - **`fromYear` drives the year in all three filenames** — original, popover, and thumbnail — regardless of when the portrait was actually painted.
 - Periods with no suitable portrait are simply omitted. Gaps are fine.
+- **Replacing an original doesn't refresh its popover/thumbnail.** `generate-popover-thumbnail.py` skips any output file that already exists. If you overwrite `<id>-original-<fromYear>.<ext>` for a slot that already had a popover/thumbnail (e.g. swapping out a previous pick, or replacing an old placeholder), delete the existing `<id>-popover-...` and `<id>-thumbnail-...` files first — otherwise they silently keep showing the old image.
 
 ---
 
@@ -217,5 +222,10 @@ The per-block workflow above (research → present → pick → finalize, repeat
 | 2 | John Adams | ✅ Complete (9 portraits, thumbnails need manual crop) |
 | 3 | Thomas Jefferson | ✅ Complete (8 portraits, gaps 1793-1797 & 1809-1813, thumbnails need manual crop) |
 | 4 | James Madison | ✅ Complete (11 portraits, gap 1793-1801, thumbnails need manual crop) |
-| 5–47 | All others | ⏳ Single auto-generated placeholder each |
+| 5 | James Monroe | ✅ Complete (7 portraits) |
+| 6 | John Quincy Adams | ✅ Complete (11 portraits) |
+| 7 | Andrew Jackson | ✅ Complete (9 portraits) |
+| 8 | Martin Van Buren | ✅ Complete (10 portraits) |
+| 9 | William Henry Harrison | ✅ Complete (6 portraits, gaps 1773-1797, 1801-1813 & 1821-1833) |
+| 10–47 | All others | ⏳ Single auto-generated placeholder each |
 
