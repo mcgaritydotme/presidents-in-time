@@ -77,7 +77,12 @@ The user picks one candidate (or declines the period). Then:
 
 Each president also has a `defaultPortraitUrl` and `defaultPortraitCredit` at the top of their entry — this is a single "hero" image used outside the timeline grid (e.g. a famous group scene, a posthumous depiction, or simply the most iconic likeness).
 
-The default portrait should be the **most famous or iconic depiction** of the president that has **not already been used** in a block portrait entry. Research it the same way as block portraits — present 1–3 candidates and wait for user selection before downloading.
+The default portrait should be the **most famous or iconic depiction** of the president that has **not already been used** in a block portrait entry. Its candidate pool has two sources, both in play every time:
+
+1. **Leftovers** — quality candidates surfaced during block research but not selected for their block.
+2. **Posthumous/retrospective works** — depictions created at any point after the president's death (commemorative paintings, sculptures, currency or postage imagery, later institutional portraits, etc.), found via a dedicated search of their own, not just whatever turns up incidentally. Apply the same research bar as block research, including the bias toward **three** quality candidates before settling for fewer.
+
+Combine both sources, then research it the same way as block portraits — present the merged set of 1–3 (or more) candidates and wait for user selection before downloading.
 
 **The default portrait must always be saved as a local file**, following the same pattern as other images:
 
@@ -160,6 +165,26 @@ To run:
 cd /Users/mcgaritydotme/Developer/presidents-in-time
 python3 generate-popover-thumbnail.py
 ```
+
+---
+
+### Batch Mode (alternative to Steps 2–3)
+
+The per-block workflow above (research → present → pick → finalize, repeated for every four-year block) is the default. **Batch Mode** is an opt-in alternative for processing an entire president in one sitting, invoked explicitly by the user (e.g. "run all periods for Harrison"). It replaces the per-block research/pick loop with one collection pass, one review, and one finalization pass.
+
+**Phase 1 — Collection.** Enumerate every four-year block from birth to death (per Step 1) and research candidates for all of them without pausing in between. Bias toward **three** quality candidates per block — fewer only once the search is genuinely exhausted. Same qualifying bar as Step 2: any artwork type, created within the block's span, a faithful and well-depicted likeness. Capture the same metadata as always, plus **dimensions in inches** when available, for every candidate — even ones that won't be chosen, since they may end up in the placeholder pool (see below). If a candidate's source domain isn't already trusted, don't fetch it — log it as pending and keep collecting; a domain gap should never interrupt the run.
+
+**Phase 2 — Domain approval.** Present the list of flagged/pending domains (what's behind each, which block it affects) for a single approve/deny pass. No images are shown yet at this point — this checkpoint is about domains only.
+
+**Phase 3 — Rerun.** Fetch everything just approved, in one batched pass, and fold the results into the candidate set.
+
+**Phase 4 — Curation.** Present the complete contact sheet — every block, every candidate, approved-domain and newly-unlocked alike — and make every selection in one pass. This is the only point candidates are shown for picking.
+
+**Phase 5 — Finalization.** Download, generate popovers/thumbnails, and update `presidents.json` for every selection in one batch, rather than one block at a time.
+
+**Placeholder pool.** Candidates collected but not chosen for their own block remain available afterward for any gap blocks (no surviving likeness for that exact span) — pick the most famous **unused** one by eye, same as the existing Default Portrait rule, then run it through the same finalization step.
+
+**Trusted domains** live in `.claude/settings.json`, seeded from sources already proven across earlier presidents. The list grows each time a new domain is approved during a batch run.
 
 ---
 
