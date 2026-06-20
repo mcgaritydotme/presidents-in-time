@@ -777,15 +777,29 @@
     "termEnd": 1849,
     "summary": "An expansionist who fulfilled the vision of Manifest Destiny, Polk added vast western territories through the Mexican-American War and the Oregon settlement.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/James_K._Polk",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Polk&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "11-default.jpg",
+    "defaultPortraitCredit": "George P.A. Healy, James K. Polk, 1858. Oil on canvas, 62 1/16 x 47 1/8 in., White House Collection, White House Historical Association",
     "portraits": [
+      {
+        "fromYear": 1837,
+        "toYear": 1841,
+        "url": "11-thumbnail-1837.jpg",
+        "popoverUrl": "11-popover-1837.jpg",
+        "credit": "Charles Fenderich, James K. Polk—Speaker of the House of Representatives, U.S., 1838. Lithograph, chine collé, sheet 16 9/16 x 12 15/16 in., Library of Congress"
+      },
+      {
+        "fromYear": 1841,
+        "toYear": 1845,
+        "url": "11-thumbnail-1841.jpg",
+        "popoverUrl": "11-popover-1841.jpg",
+        "credit": "Thomas M. Easterly (copy of an unidentified original, possibly by John Plumbe Jr.), James K. Polk, 1840s. Daguerreotype, Missouri Historical Society"
+      },
       {
         "fromYear": 1845,
         "toYear": 1849,
         "url": "11-thumbnail-1845.jpg",
         "popoverUrl": "11-popover-1845.jpg",
-        "credit": "TBD"
+        "credit": "George Peter Alexander Healy, James K. Polk, January–February 1846. Oil on canvas, 30 1/2 x 25 1/2 in., National Portrait Gallery, Smithsonian Institution"
       }
     ]
   },
