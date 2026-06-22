@@ -861,15 +861,43 @@
     "termEnd": 1853,
     "summary": "Succeeding Taylor, Fillmore signed the Compromise of 1850, including the Fugitive Slave Act, in a doomed effort to hold the Union together.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Millard_Fillmore",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Fillmore&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "13-default.jpg",
+    "defaultPortraitCredit": "James Reid Lambdin, Millard Fillmore, c. 1858. Oil on canvas, 29 1/2 x 24 1/2 in., on loan to the National Portrait Gallery, Smithsonian Institution",
     "portraits": [
       {
-        "fromYear": 1850,
+        "fromYear": 1849,
         "toYear": 1853,
-        "url": "13-thumbnail-1850.jpg",
-        "popoverUrl": "13-popover-1850.jpg",
-        "credit": "TBD"
+        "url": "13-thumbnail-1849.jpg",
+        "popoverUrl": "13-popover-1849.jpg",
+        "credit": "Millard Fillmore taken in the Capitol at Washington, March 1849. Half-plate daguerreotype, approx. 7 3/8 x 5 11/16 in., Beinecke Rare Book &amp; Manuscript Library, Yale University"
+      },
+      {
+        "fromYear": 1853,
+        "toYear": 1857,
+        "url": "13-thumbnail-1853.jpg",
+        "popoverUrl": "13-popover-1853.jpg",
+        "credit": "Brady-Handy studio, Millard Fillmore, 1855. Glass negative, wet collodion, Library of Congress"
+      },
+      {
+        "fromYear": 1857,
+        "toYear": 1861,
+        "url": "13-thumbnail-1857.jpg",
+        "popoverUrl": "13-popover-1857.jpg",
+        "credit": "George Peter Alexander Healy, Millard Fillmore, December 2, 1857. Oil on canvas, 30 x 25 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "13-thumbnail-1861.jpg",
+        "popoverUrl": "13-popover-1861.jpg",
+        "credit": "Millard Fillmore in the uniform of the Union Continentals, September 1862. Photograph, Buffalo History Museum"
+      },
+      {
+        "fromYear": 1869,
+        "toYear": 1873,
+        "url": "13-thumbnail-1869.jpg",
+        "popoverUrl": "13-popover-1869.jpg",
+        "credit": "Upson &amp; Simson, Millard Fillmore, January 4, 1870. Carte de visite photograph, Buffalo, N.Y."
       }
     ]
   },

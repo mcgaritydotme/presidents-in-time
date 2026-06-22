@@ -53,6 +53,7 @@
       "WebFetch(domain:ids.si.edu)",
       "WebFetch(domain:iiif.archive.org)",
       "WebFetch(domain:images.metmuseum.org)",
+      "WebFetch(domain:i.natgeofe.com)",
       "WebFetch(domain:itoldya420.getarchive.net)",
       "WebFetch(domain:jamesmonroemuseum.umw.edu)",
       "WebFetch(domain:kids.britannica.com)",
