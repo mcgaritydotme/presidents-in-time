@@ -178,7 +178,7 @@ The per-block workflow above (research → present → pick → finalize, repeat
 
 **Phase 3 — Rerun.** Fetch everything just approved, in one batched pass, and fold the results into the candidate set.
 
-**Phase 4 — Curation.** Present the complete contact sheet — every block, every candidate, approved-domain and newly-unlocked alike — and make every selection in one pass. This is the only point candidates are shown for picking.
+**Phase 4 — Curation.** Present the complete candidate list — every block, every candidate, approved-domain and newly-unlocked alike — as a plain markdown list grouped by block, with a clickable link and full metadata (artist, date, medium, dimensions, institution, significance note) per candidate, same density as James K. Polk's run. Never embed images via a visual widget — institutional hosts block hotlinking, so embedded `<img>` tags just render as broken placeholders. Make every selection in one pass; this is the only point candidates are shown for picking.
 
 **Phase 5 — Finalization.** Download, generate popovers/thumbnails, and update `presidents.json` for every selection in one batch, rather than one block at a time.
 
@@ -229,5 +229,6 @@ The per-block workflow above (research → present → pick → finalize, repeat
 | 9 | William Henry Harrison | ✅ Complete (6 portraits, gaps 1773-1797, 1801-1813 & 1821-1833) |
 | 10 | John Tyler | ✅ Complete (7 portraits) |
 | 11 | James K. Polk | ✅ Complete (3 portraits, gaps 1793-1837) |
-| 12–47 | All others | ⏳ Single auto-generated placeholder each |
+| 12 | Zachary Taylor | ✅ Complete (3 portraits, gap 1781-1841) |
+| 13–47 | All others | ⏳ Single auto-generated placeholder each |
 
