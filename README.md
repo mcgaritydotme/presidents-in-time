@@ -230,5 +230,6 @@ The per-block workflow above (research → present → pick → finalize, repeat
 | 10 | John Tyler | ✅ Complete (7 portraits) |
 | 11 | James K. Polk | ✅ Complete (3 portraits, gaps 1793-1837) |
 | 12 | Zachary Taylor | ✅ Complete (3 portraits, gap 1781-1841) |
-| 13–47 | All others | ⏳ Single auto-generated placeholder each |
+| 13 | Millard Fillmore | ✅ Complete (5 portraits, gaps 1797-1845 & 1865-1869 & 1873-1877) |
+| 14–47 | All others | ⏳ Single auto-generated placeholder each |
 
