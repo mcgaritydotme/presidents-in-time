@@ -823,15 +823,29 @@
     "diedInOffice": true,
     "summary": "A celebrated Mexican-American War general, Taylor served barely sixteen months before dying suddenly amid the brewing crisis over slavery in new territories.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Zachary_Taylor",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Taylor&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "12-default.jpg",
+    "defaultPortraitCredit": "Jesse Atwood, Zachary Taylor, 1847. Oil on canvas, 27 3/4 x 21 7/8 in., Huntington Library (painted from life at Taylor's army camp near Monterey, Mexico)",
     "portraits": [
       {
+        "fromYear": 1841,
+        "toYear": 1845,
+        "url": "12-thumbnail-1841.jpg",
+        "popoverUrl": "12-popover-1841.jpg",
+        "credit": "Mathew Brady studio, Zachary Taylor, 1844. Half-plate daguerreotype, gold toned, Library of Congress"
+      },
+      {
+        "fromYear": 1845,
+        "toYear": 1849,
+        "url": "12-thumbnail-1845.jpg",
+        "popoverUrl": "12-popover-1845.jpg",
+        "credit": "James Maguire, Zachary Taylor, 1847. Quarter-plate daguerreotype, 3 1/8 x 2 1/8 in., J. Paul Getty Museum"
+      },
+      {
         "fromYear": 1849,
-        "toYear": 1850,
+        "toYear": 1853,
         "url": "12-thumbnail-1849.jpg",
         "popoverUrl": "12-popover-1849.jpg",
-        "credit": "TBD"
+        "credit": "Mathew Brady, Gen. Taylor from life, March 1849. Full-plate daguerreotype, 6 5/16 x 5 9/16 in., Beinecke Rare Book &amp; Manuscript Library, Yale University"
       }
     ]
   },
