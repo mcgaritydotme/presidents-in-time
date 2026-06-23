@@ -178,7 +178,7 @@ The per-block workflow above (research → present → pick → finalize, repeat
 
 **Phase 3 — Rerun.** Fetch everything just approved, in one batched pass, and fold the results into the candidate set.
 
-**Phase 4 — Curation.** Present the complete candidate list — every block, every candidate, approved-domain and newly-unlocked alike — as a plain markdown list grouped by block, with a clickable link and full metadata (artist, date, medium, dimensions, institution, significance note) per candidate, same density as James K. Polk's run. Never embed images via a visual widget — institutional hosts block hotlinking, so embedded `<img>` tags just render as broken placeholders. Make every selection in one pass; this is the only point candidates are shown for picking.
+**Phase 4 — Curation.** Present the complete candidate list — every block, every candidate, approved-domain and newly-unlocked alike — as a plain markdown list grouped by block, with full metadata (artist, date, medium, dimensions, institution, significance note) per candidate, same density as James K. Polk's run. Never embed images via a visual widget — institutional hosts block hotlinking, so embedded `<img>` tags just render as broken placeholders. **Give two links per candidate: a direct image link and a source/object-page link** — never just one. Object-page links are the fallback when an image URL is broken or 404s; don't make the user ask for it separately. If no direct image URL can be found, say so and give the page link alone. Make every selection in one pass; this is the only point candidates are shown for picking.
 
 **Phase 5 — Finalization.** Download, generate popovers/thumbnails, and update `presidents.json` for every selection in one batch, rather than one block at a time.
 
@@ -232,5 +232,6 @@ The per-block workflow above (research → present → pick → finalize, repeat
 | 12 | Zachary Taylor | ✅ Complete (3 portraits, gap 1781-1841) |
 | 13 | Millard Fillmore | ✅ Complete (5 portraits, gaps 1797-1845 & 1865-1869 & 1873-1877) |
 | 14 | Franklin Pierce | ✅ Complete (4 portraits, gaps 1801-1845 & 1865-1869) |
-| 15–47 | All others | ⏳ Single auto-generated placeholder each |
+| 15 | James Buchanan | ✅ Complete (5 portraits, gaps 1789-1833, 1841-1849 & 1865-1869) |
+| 16–47 | All others | ⏳ Single auto-generated placeholder each |
 
