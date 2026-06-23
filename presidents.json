@@ -913,15 +913,36 @@
     "termEnd": 1857,
     "summary": "Pierce's support for the Kansas-Nebraska Act reopened the question of slavery in the territories and accelerated the nation's slide toward civil war.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Franklin_Pierce",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Pierce&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "14-default.jpg",
+    "defaultPortraitCredit": "James Reid Lambdin, Franklin Pierce, ca. 1855. Oil on canvas, 30 3/16 x 25 3/16 in., Pennsylvania Academy of the Fine Arts",
     "portraits": [
+      {
+        "fromYear": 1849,
+        "toYear": 1853,
+        "url": "14-thumbnail-1849.jpg",
+        "popoverUrl": "14-popover-1849.jpg",
+        "credit": "Unidentified maker, Franklin Pierce, c. 1852. Quarter-plate daguerreotype, 3 7/16 x 2 11/16 in., National Portrait Gallery, Smithsonian Institution"
+      },
       {
         "fromYear": 1853,
         "toYear": 1857,
         "url": "14-thumbnail-1853.jpg",
         "popoverUrl": "14-popover-1853.jpg",
-        "credit": "TBD"
+        "credit": "Brady-Handy studio, President Franklin Pierce, 1855. Photographic print, Library of Congress"
+      },
+      {
+        "fromYear": 1857,
+        "toYear": 1861,
+        "url": "14-thumbnail-1857.jpg",
+        "popoverUrl": "14-popover-1857.jpg",
+        "credit": "Mathew Brady studio, Franklin Pierce, c. 1851-1860. Whole-plate daguerreotype, gold toned, Library of Congress"
+      },
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "14-thumbnail-1861.jpg",
+        "popoverUrl": "14-popover-1861.jpg",
+        "credit": "Unidentified photographer, Franklin Pierce, inscribed May 29, 1861. Photographic print, 13 1/8 x 10 1/2 in., New Hampshire Historical Society"
       }
     ]
   },
