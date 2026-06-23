@@ -958,15 +958,43 @@
     "termEnd": 1861,
     "summary": "Often ranked among the least effective presidents, Buchanan failed to halt secession as seven states left the Union before Lincoln took office.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/James_Buchanan",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Buchanan&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "15-default.jpg",
+    "defaultPortraitCredit": "George P.A. Healy, James Buchanan, 1859. Oil on canvas, 62 x 47 in., National Portrait Gallery, Smithsonian Institution",
     "portraits": [
+      {
+        "fromYear": 1833,
+        "toYear": 1837,
+        "url": "15-thumbnail-1833.jpg",
+        "popoverUrl": "15-popover-1833.jpg",
+        "credit": "Jacob Eichholtz, James Buchanan, 1834. Oil on canvas, 36 1/8 x 28 1/4 in., Smithsonian American Art Museum"
+      },
+      {
+        "fromYear": 1849,
+        "toYear": 1853,
+        "url": "15-thumbnail-1849.jpg",
+        "popoverUrl": "15-popover-1849.jpg",
+        "credit": "James Buchanan, bust portrait, 1850. Photographic print, Library of Congress"
+      },
+      {
+        "fromYear": 1853,
+        "toYear": 1857,
+        "url": "15-thumbnail-1853.jpg",
+        "popoverUrl": "15-popover-1853.jpg",
+        "credit": "James Buchanan, Democratic candidate for fifteenth President of the United States, 1856. Lithograph after a photograph by M.B. Brady, sheet 75.5 x 61.1 cm, Library of Congress"
+      },
       {
         "fromYear": 1857,
         "toYear": 1861,
         "url": "15-thumbnail-1857.jpg",
         "popoverUrl": "15-popover-1857.jpg",
-        "credit": "TBD"
+        "credit": "Meade Brothers Studio, James Buchanan, 1859 (printed from a c. 1856 daguerreotype). Salted paper print, 4 15/16 x 4 1/4 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "15-thumbnail-1861.jpg",
+        "popoverUrl": "15-popover-1861.jpg",
+        "credit": "John Henry Brown, James Buchanan, ca. 1865. Watercolor on ivory, 5 1/2 x 4 1/4 in., Smithsonian American Art Museum"
       }
     ]
   },
