@@ -1011,15 +1011,36 @@
     "diedInOffice": true,
     "summary": "Leading the Union to victory in the Civil War, Lincoln issued the Emancipation Proclamation and preserved the nation before his assassination in 1865.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Abraham_Lincoln",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Lincoln&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "16-default.jpg",
+    "defaultPortraitCredit": "George P.A. Healy, Abraham Lincoln, 1869. Oil on canvas, 73 3/4 x 55 5/8 in., White House Collection, White House Historical Association",
     "portraits": [
+      {
+        "fromYear": 1845,
+        "toYear": 1849,
+        "url": "16-thumbnail-1845.jpg",
+        "popoverUrl": "16-popover-1845.jpg",
+        "credit": "Attributed to Nicholas H. Shepherd, Abraham Lincoln, Congressman-elect from Illinois, 1846 or 1847. Quarter-plate daguerreotype, plate 12 x 9.5 cm, Library of Congress"
+      },
+      {
+        "fromYear": 1853,
+        "toYear": 1857,
+        "url": "16-thumbnail-1853.jpg",
+        "popoverUrl": "16-popover-1853.jpg",
+        "credit": "Johan Carl Frederic Polycarpus von Schneidau, Abraham Lincoln while campaigning for the U.S. Senate, taken in Chicago, Illinois, 1854. Gelatin silver print, Library of Congress"
+      },
+      {
+        "fromYear": 1857,
+        "toYear": 1861,
+        "url": "16-thumbnail-1857.jpg",
+        "popoverUrl": "16-popover-1857.jpg",
+        "credit": "Mathew Brady studio, Abraham Lincoln, candidate for U.S. president, before delivering his Cooper Union address, February 27, 1860. Gelatin silver print, Library of Congress"
+      },
       {
         "fromYear": 1861,
         "toYear": 1865,
         "url": "16-thumbnail-1861.jpg",
         "popoverUrl": "16-popover-1861.jpg",
-        "credit": "TBD"
+        "credit": "Alexander Gardner, Abraham Lincoln, 1863. Wet collodion negative, image 17 1/8 x 13 in., National Portrait Gallery, Smithsonian Institution"
       }
     ]
   },
