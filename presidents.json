@@ -1056,15 +1056,50 @@
     "termEnd": 1869,
     "summary": "A Southern Unionist thrust into office by Lincoln's death, Johnson clashed bitterly with Congress over Reconstruction and became the first president impeached.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Andrew_Johnson",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Johnson&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "17-default.jpg",
+    "defaultPortraitCredit": "Jim Gray, Andrew Johnson statue, Greeneville, Tennessee, 1995. Bronze. Photo by Brent Moore, licensed CC BY-NC 2.0",
     "portraits": [
+      {
+        "fromYear": 1853,
+        "toYear": 1857,
+        "url": "17-thumbnail-1853.jpg",
+        "popoverUrl": "17-popover-1853.jpg",
+        "credit": "William Brown Cooper, Andrew Johnson, 1856. Oil on canvas, Mus\u00e9e National de la Coop\u00e9ration Franco-Am\u00e9ricaine, Ch\u00e2teau de Bl\u00e9rancourt, France"
+      },
+      {
+        "fromYear": 1857,
+        "toYear": 1861,
+        "url": "17-thumbnail-1857.jpg",
+        "popoverUrl": "17-popover-1857.jpg",
+        "credit": "Attributed to Jesse Harrison Whitehurst, Andrew Johnson, half-length portrait, seated, facing left, 1860. Salted paper print, Library of Congress"
+      },
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "17-thumbnail-1861.jpg",
+        "popoverUrl": "17-popover-1861.jpg",
+        "credit": "Mathew B. Brady, Andrew Johnson, full-length portrait, standing, facing right, with table and chair, 1860. Glass negative, Brady-Handy Collection, Library of Congress"
+      },
       {
         "fromYear": 1865,
         "toYear": 1869,
         "url": "17-thumbnail-1865.jpg",
         "popoverUrl": "17-popover-1865.jpg",
-        "credit": "TBD"
+        "credit": "Mathew B. Brady, Hon. Andrew Johnson, 1865. Glass negative, Brady-Handy Collection, Library of Congress"
+      },
+      {
+        "fromYear": 1869,
+        "toYear": 1873,
+        "url": "17-thumbnail-1869.jpg",
+        "popoverUrl": "17-popover-1869.jpg",
+        "credit": "Unidentified photographer, Andrew Johnson, 17th President of the United States and Vice President to Abraham Lincoln, 1870. Albumen print carte de visite, Liljenquist Family Collection, Library of Congress"
+      },
+      {
+        "fromYear": 1873,
+        "toYear": 1877,
+        "url": "17-thumbnail-1873.jpg",
+        "popoverUrl": "17-popover-1873.jpg",
+        "credit": "C.C. Giers, Andrew Johnson, March 5, 1875. Carte-de-visite photograph, C.M. McClung Historical Collection, Knox County Public Library"
       }
     ]
   },
