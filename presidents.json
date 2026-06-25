@@ -1122,15 +1122,57 @@
     "termEnd": 1877,
     "summary": "The Union's victorious commanding general, Grant pursued civil rights for freedpeople and crushed the Ku Klux Klan amid an administration marred by scandal.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Ulysses_S._Grant",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Grant&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "18-default.jpg",
+    "defaultPortraitCredit": "Unidentified photographer, Pres. U.S. Grant, c. 1870\u20131880. Glass negative, Brady-Handy Photograph Collection, Library of Congress; purchase, Alice H. Cox and Mary H. Evans, 1954",
     "portraits": [
       {
+        "fromYear": 1845,
+        "toYear": 1849,
+        "url": "18-thumbnail-1845.jpg",
+        "popoverUrl": "18-popover-1845.jpg",
+        "credit": "Unidentified photographer, Ulysses S. Grant, c. 1865 tintype copy of a lost c. 1847 daguerreotype. Tintype, 6 3/16 x 4 3/4 in., National Portrait Gallery, Smithsonian Institution; gift of Mr. and Mrs. Ralph Connor"
+      },
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "18-thumbnail-1861.jpg",
+        "popoverUrl": "18-popover-1861.jpg",
+        "credit": "Andrew J. Russell (traditionally attributed to Mathew B. Brady), General U.S. Grant, City Point, Va., August 1864. Albumen print on card mount, Library of Congress; gift of Col. Godwin Ordway, 1948"
+      },
+      {
+        "fromYear": 1865,
+        "toYear": 1869,
+        "url": "18-thumbnail-1865.jpg",
+        "popoverUrl": "18-popover-1865.jpg",
+        "credit": "Currier & Ives, after a photograph by Gurney & Son, Ulysses S. Grant, c. 1868. Lithograph, image 10 5/8 x 9 1/4 in., sheet 14 1/8 x 10 11/16 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
         "fromYear": 1869,
-        "toYear": 1877,
+        "toYear": 1873,
         "url": "18-thumbnail-1869.jpg",
         "popoverUrl": "18-popover-1869.jpg",
-        "credit": "TBD"
+        "credit": "Pach Brothers, NY, Ulysses Grant and Family at Long Branch, NJ, 1870. Photographic print; via Heritage Auctions"
+      },
+      {
+        "fromYear": 1873,
+        "toYear": 1877,
+        "url": "18-thumbnail-1873.jpg",
+        "popoverUrl": "18-popover-1873.jpg",
+        "credit": "Henry Ulke, Ulysses S. Grant, 1875. Oil on canvas, 45 1/4 x 35 1/4 in., The White House Collection, White House Historical Association"
+      },
+      {
+        "fromYear": 1877,
+        "toYear": 1881,
+        "url": "18-thumbnail-1877.jpg",
+        "popoverUrl": "18-popover-1877.jpg",
+        "credit": "Liang Shitai (See Tay), Gen. Grant with Li Hung Chang, Viceroy of China, Taken at Tientsin, January 1879. Photographic print, sheet 9 7/16 x 11 13/16 in., Library of Congress"
+      },
+      {
+        "fromYear": 1881,
+        "toYear": 1885,
+        "url": "18-thumbnail-1881.jpg",
+        "popoverUrl": "18-popover-1881.jpg",
+        "credit": "Photo by Howe, N.Y., Gen. U.S. Grant Writing His Memoirs, Mount McGregor, June 27, 1885. Albumen print, Library of Congress"
       }
     ]
   },
