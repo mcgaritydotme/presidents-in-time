@@ -179,9 +179,20 @@
 
       const head = document.createElement('div');
       head.className = 'colhead';
+      head.id = 'pres-' + p.id;
       head.innerHTML =
         '<span class="term">#' + p.id + '</span>' +
-        '<span class="name">' + p.displayName + '</span>';
+        '<span class="name-row">' +
+          '<span class="name">' + p.displayName + '</span>' +
+          '<button class="copy-link" title="Copy permalink to ' + p.displayName + '" aria-label="Copy link to ' + p.displayName + '">' +
+            '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">' +
+            '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>' +
+          '</button>' +
+        '</span>';
+      head.querySelector('.copy-link').addEventListener('click', (e) => {
+        e.stopPropagation();
+        copyPresLink(p.id, e.currentTarget);
+      });
       col.appendChild(head);
 
       for (const y of YEARS) {
@@ -414,6 +425,19 @@
     }
     history.replaceState(null, '', location.pathname + location.search + '#year-' + y);
   }
+  function copyPresLink(id, btn) {
+    const url = location.origin + location.pathname + location.search + '#pres-' + id;
+    const done = () => {
+      btn.classList.add('copied');
+      setTimeout(() => btn.classList.remove('copied'), 1200);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(done).catch(() => fallbackCopy(url, done));
+    } else {
+      fallbackCopy(url, done);
+    }
+    history.replaceState(null, '', location.pathname + location.search + '#pres-' + id);
+  }
   function fallbackCopy(text, cb) {
     const ta = document.createElement('textarea');
     ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
@@ -423,14 +447,26 @@
   }
 
   function scrollToHash() {
-    const m = (location.hash || '').match(/^#year-(\d+)$/);
-    if (!m) return;
-    const target = document.getElementById('year-' + m[1]);
-    if (!target) return;
-    const top = target.offsetTop - els.scroll.clientHeight / 2 + target.offsetHeight / 2;
-    els.scroll.scrollTo({ top: Math.max(0, top), behavior: 'auto' });
-    target.classList.add('flash');
-    setTimeout(() => target.classList.remove('flash'), 1400);
+    const hash = location.hash || '';
+    let m;
+    if ((m = hash.match(/^#year-(\d+)$/))) {
+      const target = document.getElementById('year-' + m[1]);
+      if (!target) return;
+      const top = target.offsetTop - els.scroll.clientHeight / 2 + target.offsetHeight / 2;
+      els.scroll.scrollTo({ top: Math.max(0, top), behavior: 'auto' });
+      flash(target);
+    } else if ((m = hash.match(/^#pres-(\d+)$/))) {
+      const target = document.getElementById('pres-' + m[1]);
+      // a column hidden via the filter has no layout box — nothing to scroll to.
+      if (!target || !target.offsetParent) return;
+      const left = target.offsetLeft - els.scroll.clientWidth / 2 + target.offsetWidth / 2;
+      els.scroll.scrollTo({ left: Math.max(0, left), behavior: 'auto' });
+      flash(target);
+    }
+  }
+  function flash(el) {
+    el.classList.add('flash');
+    setTimeout(() => el.classList.remove('flash'), 1400);
   }
 
   /* ---------- filter panel ---------- */

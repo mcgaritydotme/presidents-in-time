@@ -201,7 +201,32 @@
   .colhead .name {
     font-family: var(--serif); font-size: 14px; font-weight: 500;
     color: var(--ink); line-height: 1.2; letter-spacing: 0.005em;
+    white-space: nowrap;
   }
+  /* per-column permalink affordance — twin of the year-row .copy-link,
+     sitting inline just after the president name. */
+  .colhead .name-row {
+    display: inline-flex; align-items: center; gap: 3px;
+    justify-content: center; max-width: 100%;
+  }
+  /* invisible left spacer the same width as the copy button, so the name
+     stays optically centered with the icon sitting just to its right. */
+  .colhead .name-row::before {
+    content: ''; flex: none; width: 18px;
+  }
+  .colhead .copy-link {
+    flex: none;
+    opacity: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 18px; height: 18px;
+    border: none; background: none; padding: 0; cursor: pointer;
+    color: var(--muted); border-radius: 5px;
+    transition: opacity 0.12s ease, color 0.12s ease, background 0.12s ease;
+  }
+  .colhead:hover .copy-link { opacity: 1; }
+  .colhead .copy-link:hover { color: var(--ink); background: var(--hairline); }
+  .colhead .copy-link.copied { color: var(--color-in-term); opacity: 1; }
+  .colhead.flash .name { color: var(--color-in-term); }
 
   /* cells */
   .cell {
