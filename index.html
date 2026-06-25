@@ -329,14 +329,15 @@
     #po-scrim.visible { opacity: 1; visibility: visible; }
 
     /* floating card, inset from every edge so it reads as a card (not a
-       full-bleed sheet) and the bio is never crowded off-screen. dvh (not vh)
-       so iOS Safari's collapsing toolbar can't make it taller than the
-       visible area. */
+       full-bleed sheet). Fixed height (capped) so the portrait + bio can be
+       split by a stable ratio; dvh (not vh) so iOS Safari's collapsing toolbar
+       can't make it taller than the visible area. */
     #popover {
       left: 12px; right: 12px; top: auto;
       bottom: calc(12px + env(safe-area-inset-bottom));
       width: auto;
-      max-height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 24px);
+      height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 24px);
+      max-height: 760px;
       border-radius: 18px;
       transform: translateY(calc(100% + 12px + env(safe-area-inset-bottom)));
       transition: transform 0.28s cubic-bezier(.32,.72,0,1), opacity 0.2s ease, visibility 0.2s;
@@ -348,20 +349,21 @@
     /* let portrait + body become direct flex children of the sheet */
     #po-content { display: contents; }
 
-    /* native 3:4 portrait — matches the framing the images were authored for,
-       so nothing is ever cropped (no per-portrait "peek-a-boo"). The name and
-       bio start still land below it; the bio scrolls. */
-    /* cap the portrait so it can never dictate the sheet height: it gets a
-       fixed slice of the card (object-fit:cover crops, centred) and the name +
-       opening lines of the bio are always visible without scrolling. */
+    /* portrait takes UP TO 2/3 of the card and the bio gets the rest (1/3,
+       scrolls). flex-basis:0 + grow factors 2 vs 1 make that split exact and
+       independent of bio length. aspect-ratio is cleared so the image fills a
+       full-width band rather than shrinking to a 3:4 box parked in a corner;
+       object-fit:cover + centre crop keeps the subject in view. */
     #popover .po-portrait {
-      flex: 0 0 auto; aspect-ratio: 3 / 4; height: auto;
-      max-height: 42dvh;
+      flex: 2 1 0; min-height: 0;
+      width: 100%; aspect-ratio: auto; height: auto;
     }
+    #popover .po-portrait img { object-position: center; }
 
     /* variable-length text is the ONLY scroll region */
     #popover .po-body {
-      flex: 1 1 auto; overflow-y: auto; -webkit-overflow-scrolling: touch;
+      flex: 1 1 0; min-height: 0;
+      overflow-y: auto; -webkit-overflow-scrolling: touch;
       padding: 18px 20px calc(20px + env(safe-area-inset-bottom));
     }
 
@@ -391,16 +393,22 @@
   @media (hover: none) and (min-width: 641px) {
     #popover {
       inset: 0; margin: auto;
-      width: min(600px, 82vw);
-      height: fit-content;
-      max-height: 84dvh;
+      width: min(620px, 82vw);
+      height: min(82dvh, 920px);
+      max-height: 82dvh;
       border-radius: 20px;
       transform: translateY(26px);
       box-shadow: 0 30px 72px -22px rgba(40,36,28,0.5);
     }
     #popover.visible { transform: translateY(0); }
-    /* a little more portrait is affordable on the bigger card */
-    #popover .po-portrait { max-height: 46dvh; }
+    /* the bigger card carries slightly larger type so it doesn't feel small
+       against the extra real-estate */
+    #popover .po-body { padding: 24px 28px calc(26px + env(safe-area-inset-bottom)); }
+    #popover .po-name { font-size: 25px; }
+    #popover .po-meta { font-size: 14px; }
+    #popover .po-summary { font-size: 16px; line-height: 1.55; }
+    #popover .po-wiki { font-size: 14.5px; }
+    #popover .po-credit { font-size: 11.5px; }
   }
 
   .load-error {
