@@ -328,13 +328,20 @@
     }
     #po-scrim.visible { opacity: 1; visibility: visible; }
 
+    /* floating card, inset from every edge so it reads as a card (not a
+       full-bleed sheet) and the bio is never crowded off-screen. dvh (not vh)
+       so iOS Safari's collapsing toolbar can't make it taller than the
+       visible area. */
     #popover {
-      left: 0; right: 0; bottom: 0; top: auto; width: auto;
-      max-height: 88vh; border-radius: 18px 18px 0 0;
-      transform: translateY(100%);
+      left: 12px; right: 12px; top: auto;
+      bottom: calc(12px + env(safe-area-inset-bottom));
+      width: auto;
+      max-height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 24px);
+      border-radius: 18px;
+      transform: translateY(calc(100% + 12px + env(safe-area-inset-bottom)));
       transition: transform 0.28s cubic-bezier(.32,.72,0,1), opacity 0.2s ease, visibility 0.2s;
       display: flex; flex-direction: column;
-      box-shadow: 0 -12px 44px -14px rgba(40,36,28,0.5);
+      box-shadow: 0 18px 48px -14px rgba(40,36,28,0.5);
     }
     #popover.visible { transform: translateY(0); }
 
@@ -344,8 +351,12 @@
     /* native 3:4 portrait — matches the framing the images were authored for,
        so nothing is ever cropped (no per-portrait "peek-a-boo"). The name and
        bio start still land below it; the bio scrolls. */
+    /* cap the portrait so it can never dictate the sheet height: it gets a
+       fixed slice of the card (object-fit:cover crops, centred) and the name +
+       opening lines of the bio are always visible without scrolling. */
     #popover .po-portrait {
       flex: 0 0 auto; aspect-ratio: 3 / 4; height: auto;
+      max-height: 42dvh;
     }
 
     /* variable-length text is the ONLY scroll region */
@@ -371,17 +382,25 @@
     }
   }
 
-  /* ---- tablet (e.g. iPad mini): keep the bottom-sheet behavior but cap its
-     width and center it. A full-width 3:4 portrait on a ~768px-wide tablet is
-     over 1000px tall, swallowing the whole sheet and shoving the text
-     off-screen. Capping the width keeps the portrait modest so the bio shows.
-     Horizontal centering uses auto margins (not a transform) so the existing
-     translateY drag-to-dismiss logic keeps working. ---- */
+  /* ---- tablet (e.g. iPad): a larger card floated in the CENTRE of the screen,
+     rather than a small sheet pinned to the bottom edge that looks lost in all
+     the unused space. inset:0 + margin:auto centres it on both axes WITHOUT a
+     transform, leaving transform free for the enter animation and the same
+     swipe-down-to-dismiss gesture. Tap-scrim, the ✕ button and swipe-down all
+     still close it (shared from the block above). ---- */
   @media (hover: none) and (min-width: 641px) {
     #popover {
-      left: 0; right: 0; margin-inline: auto;
-      width: min(400px, 88vw); max-height: 86vh;
+      inset: 0; margin: auto;
+      width: min(600px, 82vw);
+      height: fit-content;
+      max-height: 84dvh;
+      border-radius: 20px;
+      transform: translateY(26px);
+      box-shadow: 0 30px 72px -22px rgba(40,36,28,0.5);
     }
+    #popover.visible { transform: translateY(0); }
+    /* a little more portrait is affordable on the bigger card */
+    #popover .po-portrait { max-height: 46dvh; }
   }
 
   .load-error {
