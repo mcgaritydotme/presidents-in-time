@@ -1188,15 +1188,78 @@
     "termEnd": 1881,
     "summary": "Winning a disputed election resolved by the Compromise of 1877, Hayes ended Reconstruction by withdrawing federal troops from the South.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Rutherford_B._Hayes",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Hayes&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "19-default.jpg",
+    "defaultPortraitCredit": "James Landy, Rutherford B. Hayes, 1877. Cabinet card photograph, Library of Congress",
     "portraits": [
+      {
+        "fromYear": 1841,
+        "toYear": 1845,
+        "url": "19-thumbnail-1841.jpg",
+        "popoverUrl": "19-popover-1841.jpg",
+        "credit": "Unidentified photographer, Rutherford B. Hayes, 1842 (age 20, shortly after graduating Kenyon College). Daguerreotype, Rutherford B. Hayes Presidential Library & Museums"
+      },
+      {
+        "fromYear": 1849,
+        "toYear": 1853,
+        "url": "19-thumbnail-1849.jpg",
+        "popoverUrl": "19-popover-1849.jpg",
+        "credit": "Unidentified photographer, Rutherford B. and Lucy Webb Hayes wedding daguerreotype, December 30, 1852. Daguerreotype, 4.6 x 6 in., Rutherford B. Hayes Presidential Center, Ohio History Connection"
+      },
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "19-thumbnail-1861.jpg",
+        "popoverUrl": "19-popover-1861.jpg",
+        "credit": "Unidentified photographer, Rutherford B. Hayes in Civil War uniform, 1861. Photographic print, Rutherford B. Hayes Presidential Center, Ohio History Connection"
+      },
+      {
+        "fromYear": 1865,
+        "toYear": 1869,
+        "url": "19-thumbnail-1865.jpg",
+        "popoverUrl": "19-popover-1865.jpg",
+        "credit": "Unidentified photographer, Rutherford B. Hayes, c. 1865–1880 (date approximate; title from unverified negative-sleeve annotation). Glass negative, Brady-Handy Photograph Collection, Library of Congress"
+      },
+      {
+        "fromYear": 1869,
+        "toYear": 1873,
+        "url": "19-thumbnail-1869.jpg",
+        "popoverUrl": "19-popover-1869.jpg",
+        "credit": "Charles T. Webber, Rutherford B. Hayes, 1872. Oil on canvas, 48 x 36 in., Ohio Statehouse, Columbus"
+      },
+      {
+        "fromYear": 1873,
+        "toYear": 1877,
+        "url": "19-thumbnail-1873.jpg",
+        "popoverUrl": "19-popover-1873.jpg",
+        "credit": "Currier & Ives, Grand National Republican Banner (Hayes/Wheeler campaign print), 1876. Lithograph, image 13 1/4 x 8 7/8 in., Library of Congress"
+      },
       {
         "fromYear": 1877,
         "toYear": 1881,
         "url": "19-thumbnail-1877.jpg",
         "popoverUrl": "19-popover-1877.jpg",
-        "credit": "TBD"
+        "credit": "Napoleon Sarony, Rutherford B. Hayes, 1877. Photograph, 3.4 x 6.8 in., Rutherford B. Hayes Presidential Center, Ohio History Connection"
+      },
+      {
+        "fromYear": 1881,
+        "toYear": 1885,
+        "url": "19-thumbnail-1881.jpg",
+        "popoverUrl": "19-popover-1881.jpg",
+        "credit": "Daniel Huntington, Rutherford B. Hayes, 1884. Oil on canvas, 66 3/16 x 40 3/8 in., The White House Collection, White House Historical Association"
+      },
+      {
+        "fromYear": 1885,
+        "toYear": 1889,
+        "url": "19-thumbnail-1885.jpg",
+        "popoverUrl": "19-popover-1885.jpg",
+        "credit": "Unidentified photographer, President Hayes, Mrs. Hayes, and William Henry Smith on the Piazza at Spiegel Grove, 1889. Photographic print, Ohio History Connection"
+      },
+      {
+        "fromYear": 1889,
+        "toYear": 1893,
+        "url": "19-thumbnail-1889.jpg",
+        "popoverUrl": "19-popover-1889.jpg",
+        "credit": "Unidentified photographer, Rutherford B. Hayes, Toledo, Ohio, approximately 1890. Photographic print, 7 x 5 in., Toledo Lucas County Public Library, Local History and Genealogy"
       }
     ]
   },

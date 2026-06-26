@@ -236,5 +236,6 @@ The per-block workflow above (research → present → pick → finalize, repeat
 | 16 | Abraham Lincoln | ✅ Complete (5 portraits, gaps 1809-1845 & 1849-1853) |
 | 17 | Andrew Johnson | ✅ Complete (6 portraits, gaps 1805-1853) |
 | 18 | Ulysses S. Grant | ✅ Complete (7 portraits, gaps 1821-1845 & 1849-1861) |
-| 19–47 | All others | ⏳ Single auto-generated placeholder each |
+| 19 | Rutherford B. Hayes | ✅ Complete (10 portraits, gaps 1821-1841 & 1845-1861) |
+| 20–47 | All others | ⏳ Single auto-generated placeholder each |
 
