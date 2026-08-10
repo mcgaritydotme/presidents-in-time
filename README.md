@@ -237,5 +237,7 @@ The per-block workflow above (research → present → pick → finalize, repeat
 | 17 | Andrew Johnson | ✅ Complete (6 portraits, gaps 1805-1853) |
 | 18 | Ulysses S. Grant | ✅ Complete (7 portraits, gaps 1821-1845 & 1849-1861) |
 | 19 | Rutherford B. Hayes | ✅ Complete (10 portraits, gaps 1821-1841 & 1845-1861) |
-| 20–47 | All others | ⏳ Single auto-generated placeholder each |
+| 20 | James A. Garfield | ✅ Complete (8 portraits, gaps 1829-1845, 1849-1853 & 1865-1869; default: BEP engraving c. 1881) |
+| 21 | Chester A. Arthur | ✅ Complete (7 portraits, gaps 1829-1857 & 1865-1869; default: Lot Flannery painted plaster bust, before 1883, SAAM) |
+| 22–47 | All others | ⏳ Single auto-generated placeholder each |
 

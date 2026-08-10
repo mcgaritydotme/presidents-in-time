@@ -660,7 +660,7 @@
         "toYear": 1801,
         "url": "09-thumbnail-1797.jpg",
         "popoverUrl": "09-popover-1797.jpg",
-        "credit": "Charles B.J.F. de Saint-Mémin, William Henry Harrison, 1800. Engraving, image 2 1/4 in. diam., sheet 4 3/4 x 4 in., Library of Congress"
+        "credit": "Charles B.J.F. de Saint-M\u00e9min, William Henry Harrison, 1800. Engraving, image 2 1/4 in. diam., sheet 4 3/4 x 4 in., Library of Congress"
       },
       {
         "fromYear": 1813,
@@ -785,7 +785,7 @@
         "toYear": 1841,
         "url": "11-thumbnail-1837.jpg",
         "popoverUrl": "11-popover-1837.jpg",
-        "credit": "Charles Fenderich, James K. Polk—Speaker of the House of Representatives, U.S., 1838. Lithograph, chine collé, sheet 16 9/16 x 12 15/16 in., Library of Congress"
+        "credit": "Charles Fenderich, James K. Polk\u2014Speaker of the House of Representatives, U.S., 1838. Lithograph, chine coll\u00e9, sheet 16 9/16 x 12 15/16 in., Library of Congress"
       },
       {
         "fromYear": 1841,
@@ -799,7 +799,7 @@
         "toYear": 1849,
         "url": "11-thumbnail-1845.jpg",
         "popoverUrl": "11-popover-1845.jpg",
-        "credit": "George Peter Alexander Healy, James K. Polk, January–February 1846. Oil on canvas, 30 1/2 x 25 1/2 in., National Portrait Gallery, Smithsonian Institution"
+        "credit": "George Peter Alexander Healy, James K. Polk, January\u2013February 1846. Oil on canvas, 30 1/2 x 25 1/2 in., National Portrait Gallery, Smithsonian Institution"
       },
       {
         "fromYear": 1849,
@@ -1217,7 +1217,7 @@
         "toYear": 1869,
         "url": "19-thumbnail-1865.jpg",
         "popoverUrl": "19-popover-1865.jpg",
-        "credit": "Unidentified photographer, Rutherford B. Hayes, c. 1865–1880 (date approximate; title from unverified negative-sleeve annotation). Glass negative, Brady-Handy Photograph Collection, Library of Congress"
+        "credit": "Unidentified photographer, Rutherford B. Hayes, c. 1865\u20131880 (date approximate; title from unverified negative-sleeve annotation). Glass negative, Brady-Handy Photograph Collection, Library of Congress"
       },
       {
         "fromYear": 1869,
@@ -1276,15 +1276,64 @@
     "diedInOffice": true,
     "summary": "A reform-minded scholar and Civil War general, Garfield was shot months into his term and died that September, spurring civil-service reform.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/James_A._Garfield",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Garfield&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "20-default.jpg",
+    "defaultPortraitCredit": "Bureau of Engraving and Printing, James A. Garfield, c. 1881. Line engraving, Bureau of Engraving and Printing",
     "portraits": [
       {
-        "fromYear": 1881,
+        "fromYear": 1845,
+        "toYear": 1849,
+        "url": "20-thumbnail-1845.jpg",
+        "popoverUrl": "20-popover-1845.jpg",
+        "credit": "Unidentified photographer, James A. Garfield at 16, c. 1847 (reproduction of original). 4 x 7 in., Hiram College Archives, James A. Garfield Collection"
+      },
+      {
+        "fromYear": 1853,
+        "toYear": 1857,
+        "url": "20-thumbnail-1853.jpg",
+        "popoverUrl": "20-popover-1853.jpg",
+        "credit": "Unidentified photographer, James A. Garfield, Principal, 1854\u20131857 (reprint of original ambrotype). 2.5 x 3.5 in., Hiram College Archives, James A. Garfield Collection"
+      },
+      {
+        "fromYear": 1857,
+        "toYear": 1861,
+        "url": "20-thumbnail-1857.jpg",
+        "popoverUrl": "20-popover-1857.jpg",
+        "credit": "Unidentified photographer, Garfield with Ellen \"Nellie\" Rudolph, c. 1858. 6.25 x 9 in., Hiram College Archives, James A. Garfield Collection"
+      },
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "20-thumbnail-1861.jpg",
+        "popoverUrl": "20-popover-1861.jpg",
+        "credit": "Unidentified photographer, James A. Garfield, Civil War General, c. 1863. 10 x 7 in., Hiram College Archives, James A. Garfield Collection"
+      },
+      {
+        "fromYear": 1869,
+        "toYear": 1873,
+        "url": "20-thumbnail-1869.jpg",
+        "popoverUrl": "20-popover-1869.jpg",
+        "credit": "Mathew B. Brady, Little Mollie Garfield & Her Father, c. 1870. Photographic print, Library of Congress (Frances Benjamin Johnston Collection)"
+      },
+      {
+        "fromYear": 1873,
+        "toYear": 1877,
+        "url": "20-thumbnail-1873.jpg",
+        "popoverUrl": "20-popover-1873.jpg",
+        "credit": "Unidentified photographer, James A. Garfield and his mother Eliza Ballou Garfield (detail from a Garfield/Rudolph family group photo), 1873. Photograph, Hiram College Archives, James A. Garfield Collection"
+      },
+      {
+        "fromYear": 1877,
         "toYear": 1881,
+        "url": "20-thumbnail-1877.jpg",
+        "popoverUrl": "20-popover-1877.jpg",
+        "credit": "Unidentified photographer, James A. Garfield, seated portrait, c. 1870\u20131880 (date approximate; title from unverified negative-sleeve annotation). Glass negative, Brady-Handy Photograph Collection, Library of Congress"
+      },
+      {
+        "fromYear": 1881,
+        "toYear": 1885,
         "url": "20-thumbnail-1881.jpg",
         "popoverUrl": "20-popover-1881.jpg",
-        "credit": "TBD"
+        "credit": "H.W. Tibbals (Painesville, Ohio), James A. Garfield, President, 1881. 6.5 x 4.25 in., Hiram College Archives, James A. Garfield Collection"
       }
     ]
   },
@@ -1300,15 +1349,57 @@
     "termEnd": 1885,
     "summary": "Rising from machine politics, Arthur surprised critics by championing the Pendleton Act, which established a merit-based federal civil service.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Chester_A._Arthur",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Arthur&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "21-default.jpg",
+    "defaultPortraitCredit": "Lot Flannery, Chester Arthur, before 1883. Painted plaster, 26 1/8 x 20 7/8 x 12 5/8 in., Smithsonian American Art Museum",
     "portraits": [
+      {
+        "fromYear": 1857,
+        "toYear": 1861,
+        "url": "21-thumbnail-1857.jpg",
+        "popoverUrl": "21-popover-1857.jpg",
+        "credit": "Rufus Anson, Chester A. Arthur, c. 1858. Sixth-plate daguerreotype with applied color, 2 3/4 x 2 1/4 in. (image/sight), National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "21-thumbnail-1861.jpg",
+        "popoverUrl": "21-popover-1861.jpg",
+        "credit": "Unidentified photographer, Chester Alan Arthur, c. 1861. Photomechanical print, Arthur Family Collection, Library of Congress (caption card data unverified)"
+      },
+      {
+        "fromYear": 1869,
+        "toYear": 1873,
+        "url": "21-thumbnail-1869.jpg",
+        "popoverUrl": "21-popover-1869.jpg",
+        "credit": "Unidentified photographer, Chester A. Arthur, c. 1870. Photographic print, Prints & Photographs Division, Library of Congress"
+      },
+      {
+        "fromYear": 1873,
+        "toYear": 1877,
+        "url": "21-thumbnail-1873.jpg",
+        "popoverUrl": "21-popover-1873.jpg",
+        "credit": "C.M. Bell (Washington, D.C.), Chester A. Arthur, c. 1873. Glass negative, 5 x 7 in., C.M. Bell Collection, Prints & Photographs Division, Library of Congress (date based on span of Bell Collection, 1873\u20131894)"
+      },
+      {
+        "fromYear": 1877,
+        "toYear": 1881,
+        "url": "21-thumbnail-1877.jpg",
+        "popoverUrl": "21-popover-1877.jpg",
+        "credit": "Abraham Bogardus, Chester A. Arthur, c. 1880. Albumen silver print, National Portrait Gallery, Smithsonian Institution"
+      },
       {
         "fromYear": 1881,
         "toYear": 1885,
         "url": "21-thumbnail-1881.jpg",
         "popoverUrl": "21-popover-1881.jpg",
-        "credit": "TBD"
+        "credit": "Ole Peter Hansen Balling, Chester A. Arthur, 1881. Oil on canvas, National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1885,
+        "toYear": 1889,
+        "url": "21-thumbnail-1885.jpg",
+        "popoverUrl": "21-popover-1885.jpg",
+        "credit": "Daniel Huntington, Chester Alan Arthur, 1885. Oil on canvas, 95 1/4 x 59 1/4 in., White House Collection, White House Historical Association"
       }
     ]
   },
