@@ -117,7 +117,8 @@
       "WebFetch(domain:www.wikiart.org)",
       "WebFetch(domain:www.worldhistory.org)",
       "WebFetch(domain:wikigallery.org)",
-      "WebFetch(domain:yarbs.net)"
+      "WebFetch(domain:yarbs.net)",
+      "WebFetch(domain:tcsteele.org)"
     ]
   }
 }
