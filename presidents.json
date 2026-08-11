@@ -1415,15 +1415,43 @@
     "termEnd": 1889,
     "summary": "A reform Democrat known for honesty and vetoes, Cleveland fought patronage and tariffs in the first of his two non-consecutive terms.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Grover_Cleveland",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Cleveland&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "22-default.jpg",
+    "defaultPortraitCredit": "Eastman Johnson, Grover Cleveland, 1884. Oil on artist board, 21 3/16 x 16 15/16 in., National Portrait Gallery, Smithsonian Institution",
     "portraits": [
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "22-thumbnail-1861.jpg",
+        "popoverUrl": "22-popover-1861.jpg",
+        "credit": "Unidentified artist, Grover Cleveland, c. 1862. National Portrait Gallery, Smithsonian Institution (artist and medium unverified; NPG primary record inaccessible)"
+      },
+      {
+        "fromYear": 1877,
+        "toYear": 1881,
+        "url": "22-thumbnail-1877.jpg",
+        "popoverUrl": "22-popover-1877.jpg",
+        "credit": "Unidentified lithographer, Grover Cleveland, 1880. Lithograph, sheet 36 1/4 x 48 in., Library of Congress, Prints & Photographs Division"
+      },
+      {
+        "fromYear": 1881,
+        "toYear": 1885,
+        "url": "22-thumbnail-1881.jpg",
+        "popoverUrl": "22-popover-1881.jpg",
+        "credit": "W.J. Morgan & Co., Grover Cleveland, 1884. Lithograph, sheet 36 1/4 x 48 in., Library of Congress, Prints & Photographs Division"
+      },
       {
         "fromYear": 1885,
         "toYear": 1889,
         "url": "22-thumbnail-1885.jpg",
         "popoverUrl": "22-popover-1885.jpg",
-        "credit": "TBD"
+        "credit": "Unidentified photographer, Grover Cleveland, c. 1885. Albumen silver print, National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1889,
+        "toYear": 1893,
+        "url": "22-thumbnail-1889.jpg",
+        "popoverUrl": "22-popover-1889.jpg",
+        "credit": "Napoleon Sarony, Grover Cleveland, 1892. Photographic print, Library of Congress, Prints & Photographs Division"
       }
     ]
   },
@@ -1463,15 +1491,36 @@
     "termEnd": 1897,
     "summary": "Returning to office as the first president to serve non-consecutive terms, Cleveland confronted the severe economic depression of the Panic of 1893.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Grover_Cleveland",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Cleveland&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "22-default.jpg",
+    "defaultPortraitCredit": "Eastman Johnson, Grover Cleveland, 1884. Oil on artist board, 21 3/16 x 16 15/16 in., National Portrait Gallery, Smithsonian Institution",
     "portraits": [
       {
         "fromYear": 1893,
         "toYear": 1897,
         "url": "24-thumbnail-1893.jpg",
         "popoverUrl": "24-popover-1893.jpg",
-        "credit": "TBD"
+        "credit": "E.A. Wright (Philadelphia), Grover Cleveland, 1893. Engraving, Library of Congress, Prints & Photographs Division"
+      },
+      {
+        "fromYear": 1897,
+        "toYear": 1901,
+        "url": "24-thumbnail-1897.jpg",
+        "popoverUrl": "24-popover-1897.jpg",
+        "credit": "Anders Zorn, Grover Cleveland, 1899. Oil on canvas, 47 15/16 x 35 15/16 in., National Portrait Gallery, Smithsonian Institution"
+      },
+      {
+        "fromYear": 1901,
+        "toYear": 1905,
+        "url": "24-thumbnail-1901.jpg",
+        "popoverUrl": "24-popover-1901.jpg",
+        "credit": "Unidentified artist, Grover Cleveland, 1904. National Portrait Gallery, Smithsonian Institution (artist and medium unverified; NPG primary record inaccessible)"
+      },
+      {
+        "fromYear": 1905,
+        "toYear": 1909,
+        "url": "24-thumbnail-1905.jpg",
+        "popoverUrl": "24-popover-1905.jpg",
+        "credit": "Unidentified artist, Grover Cleveland, 1906. Etching, National Portrait Gallery, Smithsonian Institution (artist unverified; NPG primary record inaccessible)"
       }
     ]
   },

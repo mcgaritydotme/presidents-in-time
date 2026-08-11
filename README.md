@@ -239,5 +239,8 @@ The per-block workflow above (research → present → pick → finalize, repeat
 | 19 | Rutherford B. Hayes | ✅ Complete (10 portraits, gaps 1821-1841 & 1845-1861) |
 | 20 | James A. Garfield | ✅ Complete (8 portraits, gaps 1829-1845, 1849-1853 & 1865-1869; default: BEP engraving c. 1881) |
 | 21 | Chester A. Arthur | ✅ Complete (7 portraits, gaps 1829-1857 & 1865-1869; default: Lot Flannery painted plaster bust, before 1883, SAAM) |
-| 22–47 | All others | ⏳ Single auto-generated placeholder each |
+| 22 | Grover Cleveland (1st term) | ✅ Complete (5 portraits, gaps 1837-1861 & 1865-1877; default: Eastman Johnson oil on artist board, 1884, NPG) |
+| 23 | Benjamin Harrison | ⏳ Single auto-generated placeholder |
+| 24 | Grover Cleveland (2nd term) | ✅ Complete (4 portraits; default: same as id 22) |
+| 25–47 | All others | ⏳ Single auto-generated placeholder each |
 
