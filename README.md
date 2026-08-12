@@ -241,6 +241,7 @@ The per-block workflow above (research → present → pick → finalize, repeat
 | 21 | Chester A. Arthur | ✅ Complete (7 portraits, gaps 1829-1857 & 1865-1869; default: Lot Flannery painted plaster bust, before 1883, SAAM) |
 | 22 | Grover Cleveland (1st term) | ✅ Complete (5 portraits, gaps 1837-1861 & 1865-1877; default: Eastman Johnson oil on artist board, 1884, NPG) |
 | 23 | Benjamin Harrison | ✅ Complete (9 portraits, gaps 1853-1861, 1865-1873 & 1877-1881; default: Eastman Johnson oil on canvas, 1895, White House collection) |
-| 24 | Grover Cleveland (2nd term) | ✅ Complete (4 portraits; default: same as id 22) |
-| 25–47 | All others | ⏳ Single auto-generated placeholder each |
+| 24 | Grover Cleveland (2nd term) | ✅ Complete (4 portraits; default: BEP engraved portrait, undated) |
+| 25 | William McKinley | ✅ Complete (9 portraits, gaps 1877–1889; default: Harriet A. S. Murphy oil on canvas, 1902, White House Collection) |
+| 26–47 | All others | ⏳ Single auto-generated placeholder each |
 

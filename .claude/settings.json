@@ -118,7 +118,9 @@
       "WebFetch(domain:www.worldhistory.org)",
       "WebFetch(domain:wikigallery.org)",
       "WebFetch(domain:yarbs.net)",
-      "WebFetch(domain:tcsteele.org)"
+      "WebFetch(domain:tcsteele.org)",
+      "WebFetch(domain:mckinleymuseum.org)",
+      "WebFetch(domain:thehistoricalhomemaker.com)"
     ]
   }
 }

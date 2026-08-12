@@ -1547,8 +1547,8 @@
     "termEnd": 1897,
     "summary": "Returning to office as the first president to serve non-consecutive terms, Cleveland confronted the severe economic depression of the Panic of 1893.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Grover_Cleveland",
-    "defaultPortraitUrl": "22-default.jpg",
-    "defaultPortraitCredit": "Eastman Johnson, Grover Cleveland, 1884. Oil on artist board, 21 3/16 x 16 15/16 in., National Portrait Gallery, Smithsonian Institution",
+    "defaultPortraitUrl": "24-default.jpg",
+    "defaultPortraitCredit": "Bureau of Engraving and Printing, Grover Cleveland, President, undated. Engraving.",
     "portraits": [
       {
         "fromYear": 1893,
@@ -1593,15 +1593,71 @@
     "diedInOffice": true,
     "summary": "McKinley led the nation to victory in the Spanish-American War, ushering in an era of overseas empire before his assassination in 1901.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/William_McKinley",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=McKinley&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "25-default.jpg",
+    "defaultPortraitCredit": "Harriet A. S. Murphy, William McKinley, 1902. Oil on canvas, 60 1/4 x 36 1/4 in. White House Historical Association/White House Collection",
     "portraits": [
+      {
+        "fromYear": 1857,
+        "toYear": 1861,
+        "url": "25-thumbnail-1857.jpg",
+        "popoverUrl": "25-popover-1857.jpg",
+        "credit": "Unidentified photographer, William McKinley at age 15, c. 1858. Photograph (reproduced in Oscar King Davis, The Life of William McKinley, Baker & Taylor, 1901, p. 1)."
+      },
+      {
+        "fromYear": 1861,
+        "toYear": 1865,
+        "url": "25-thumbnail-1861.jpg",
+        "popoverUrl": "25-popover-1861.jpg",
+        "credit": "Unidentified photographer, William McKinley as 1st Lieutenant, 23rd Ohio Volunteer Infantry, c. 1863\u20131865. Carte de visite, 2.5 x 4 in. William McKinley Presidential Collection, Ohio History Connection"
+      },
+      {
+        "fromYear": 1865,
+        "toYear": 1869,
+        "url": "25-thumbnail-1865.jpg",
+        "popoverUrl": "25-popover-1865.jpg",
+        "credit": "Unidentified photographer, William McKinley, 1866–1867. Photograph. McKinley Presidential Library & Museum, Canton, Ohio"
+      },
+      {
+        "fromYear": 1869,
+        "toYear": 1873,
+        "url": "25-thumbnail-1869.jpg",
+        "popoverUrl": "25-popover-1869.jpg",
+        "credit": "Unidentified photographer, William McKinley as Stark County Prosecutor, 1869. Photograph. McKinley Presidential Library & Museum, Canton, Ohio"
+      },
+      {
+        "fromYear": 1873,
+        "toYear": 1877,
+        "url": "25-thumbnail-1873.jpg",
+        "popoverUrl": "25-popover-1873.jpg",
+        "credit": "C.M. Bell, McKinley, Hon. William, 1873. Glass negative, 5 x 7 in. Library of Congress, Prints & Photographs Division (C.M. Bell Collection) (sitter identification unverified per LOC)"
+      },
+      {
+        "fromYear": 1889,
+        "toYear": 1893,
+        "url": "25-thumbnail-1889.jpg",
+        "popoverUrl": "25-popover-1889.jpg",
+        "credit": "Forbes Lith. Mfg. Co. (copyright claimant), William McKinley, 1891. Photogravure. Library of Congress, Prints & Photographs Division"
+      },
+      {
+        "fromYear": 1893,
+        "toYear": 1897,
+        "url": "25-thumbnail-1893.jpg",
+        "popoverUrl": "25-popover-1893.jpg",
+        "credit": "Frederick Gutekunst, William McKinley, 1896. Photographic print. Library of Congress, Prints & Photographs Division"
+      },
       {
         "fromYear": 1897,
         "toYear": 1901,
         "url": "25-thumbnail-1897.jpg",
         "popoverUrl": "25-popover-1897.jpg",
-        "credit": "TBD"
+        "credit": "B.M. Clinedinst, President William McKinley, 1900. Photographic print. Library of Congress, Prints & Photographs Division"
+      },
+      {
+        "fromYear": 1901,
+        "toYear": 1905,
+        "url": "25-thumbnail-1901.jpg",
+        "popoverUrl": "25-popover-1901.jpg",
+        "credit": "Adolfo M\u00fcller-Ury, William McKinley, c. 1901. Oil on canvas, 78 5/16 x 43 15/16 in. National Portrait Gallery, Smithsonian Institution (NPG.97.157)"
       }
     ]
   },
