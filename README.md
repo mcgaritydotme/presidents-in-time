@@ -243,5 +243,6 @@ The per-block workflow above (research → present → pick → finalize, repeat
 | 23 | Benjamin Harrison | ✅ Complete (9 portraits, gaps 1853-1861, 1865-1873 & 1877-1881; default: Eastman Johnson oil on canvas, 1895, White House collection) |
 | 24 | Grover Cleveland (2nd term) | ✅ Complete (4 portraits; default: BEP engraved portrait, undated) |
 | 25 | William McKinley | ✅ Complete (9 portraits, gaps 1877–1889; default: Harriet A. S. Murphy oil on canvas, 1902, White House Collection) |
-| 26–47 | All others | ⏳ Single auto-generated placeholder each |
+| 26 | Theodore Roosevelt | ✅ Complete (12 portraits, gap 1869–1873; default: Pirie MacDonald photographic print, 1915, NPG) |
+| 27–47 | All others | ⏳ Single auto-generated placeholder each |
 

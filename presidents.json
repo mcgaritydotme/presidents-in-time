@@ -1615,7 +1615,7 @@
         "toYear": 1869,
         "url": "25-thumbnail-1865.jpg",
         "popoverUrl": "25-popover-1865.jpg",
-        "credit": "Unidentified photographer, William McKinley, 1866–1867. Photograph. McKinley Presidential Library & Museum, Canton, Ohio"
+        "credit": "Unidentified photographer, William McKinley, 1866\u20131867. Photograph. McKinley Presidential Library & Museum, Canton, Ohio"
       },
       {
         "fromYear": 1869,
@@ -1673,15 +1673,92 @@
     "termEnd": 1909,
     "summary": "A trust-busting progressive and conservationist, Roosevelt expanded federal power, built the Panama Canal, and won the Nobel Peace Prize.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Theodore_Roosevelt",
-    "defaultPortraitUrl": "https://placehold.co/450x600/e6dfcf/6b6253?text=Roosevelt&font=playfair-display",
-    "defaultPortraitCredit": "placeholder image \u00b7 replace with public-domain portrait",
+    "defaultPortraitUrl": "26-default.jpg",
+    "defaultPortraitCredit": "Pirie MacDonald, Theodore Roosevelt, 1915. Photographic print. National Portrait Gallery, Smithsonian Institution (NPG.2002.376)",
     "portraits": [
       {
+        "fromYear": 1873,
+        "toYear": 1877,
+        "url": "26-thumbnail-1873.jpg",
+        "popoverUrl": "26-popover-1873.jpg",
+        "credit": "Unidentified photographer, Theo. Roosevelt at college, 1876. Photographic print. Library of Congress, Prints & Photographs Division (LCCN2013650923)"
+      },
+      {
+        "fromYear": 1877,
+        "toYear": 1881,
+        "url": "26-thumbnail-1877.jpg",
+        "popoverUrl": "26-popover-1877.jpg",
+        "credit": "Unidentified photographer, Theodore Roosevelt mountain climbing in the West, 1880. Photographic print. Library of Congress, Prints & Photographs Division (LCCN2013650926)"
+      },
+      {
+        "fromYear": 1881,
+        "toYear": 1885,
+        "url": "26-thumbnail-1881.jpg",
+        "popoverUrl": "26-popover-1881.jpg",
+        "credit": "Unidentified photographer, Theodore Roosevelt as assemblyman, 1884. Photographic print. Library of Congress, Prints & Photographs Division (LCCN2013650897)"
+      },
+      {
+        "fromYear": 1885,
+        "toYear": 1889,
+        "url": "26-thumbnail-1885.jpg",
+        "popoverUrl": "26-popover-1885.jpg",
+        "credit": "George Grantham Bain, Theodore Roosevelt with hunting suit and rifle, 1885. Photographic print. Library of Congress, Prints & Photographs Division (George Grantham Bain Collection)"
+      },
+      {
+        "fromYear": 1889,
+        "toYear": 1893,
+        "url": "26-thumbnail-1889.jpg",
+        "popoverUrl": "26-popover-1889.jpg",
+        "credit": "Levin C. Handy, Theodore Roosevelt in his office, 1890. Photographic print. Library of Congress, Prints & Photographs Division (LCCN2013649579)"
+      },
+      {
+        "fromYear": 1893,
+        "toYear": 1897,
+        "url": "26-thumbnail-1893.jpg",
+        "popoverUrl": "26-popover-1893.jpg",
+        "credit": "Unidentified photographer, Theodore Roosevelt as New York City police commissioner, 1895. Photographic print. Library of Congress, Prints & Photographs Division (LCCN2013650911)"
+      },
+      {
+        "fromYear": 1897,
+        "toYear": 1901,
+        "url": "26-thumbnail-1897.jpg",
+        "popoverUrl": "26-popover-1897.jpg",
+        "credit": "B. J. Falk, Colonel Theodore Roosevelt, 1898. Photographic print. Library of Congress, Prints & Photographs Division (LCCN2009631547)"
+      },
+      {
         "fromYear": 1901,
-        "toYear": 1909,
+        "toYear": 1905,
         "url": "26-thumbnail-1901.jpg",
         "popoverUrl": "26-popover-1901.jpg",
-        "credit": "TBD"
+        "credit": "John Singer Sargent, Theodore Roosevelt, 1903. Oil on canvas. White House Historical Association/White House Collection"
+      },
+      {
+        "fromYear": 1905,
+        "toYear": 1909,
+        "url": "26-thumbnail-1905.jpg",
+        "popoverUrl": "26-popover-1905.jpg",
+        "credit": "Harris & Ewing, Theodore Roosevelt, 1907. Glass transparency, 8 x 10 in. Library of Congress, Prints & Photographs Division"
+      },
+      {
+        "fromYear": 1909,
+        "toYear": 1913,
+        "url": "26-thumbnail-1909.jpg",
+        "popoverUrl": "26-popover-1909.jpg",
+        "credit": "Unidentified photographer, Theodore Roosevelt, three-quarter length portrait, seated, 1910. Photographic print. Library of Congress, Prints & Photographs Division (LCCN98507038)"
+      },
+      {
+        "fromYear": 1913,
+        "toYear": 1917,
+        "url": "26-thumbnail-1913.jpg",
+        "popoverUrl": "26-popover-1913.jpg",
+        "credit": "James S. King, Theodore Roosevelt, 1915. Etching. Library of Congress, Prints & Photographs Division (LCCN2013650898)"
+      },
+      {
+        "fromYear": 1917,
+        "toYear": 1921,
+        "url": "26-thumbnail-1917.jpg",
+        "popoverUrl": "26-popover-1917.jpg",
+        "credit": "Baker's Art Gallery, Theodore Roosevelt, head-and-shoulders portrait, 1918. Photographic print. Library of Congress, Prints & Photographs Division (LCCN2013648190)"
       }
     ]
   },
